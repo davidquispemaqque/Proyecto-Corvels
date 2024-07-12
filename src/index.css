@@ -1,4 +1,4 @@
-/* body {
+ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,7 +10,7 @@
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-} */
+} 
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -32,3 +32,80 @@ footer {
   padding: 10px;
   text-align: center;
 }
+
+/* src/index.css */
+
+/* src/App.css */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-container {
+  margin-top: 100px; /* Ajusta este valor según la altura de tu navbar */
+  flex: 1;
+}
+
+
+.hero-section {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.contact-info ul li i {
+  margin-right: 10px;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form form .form-group {
+  margin-bottom: 15px;
+}
+
+.map iframe {
+  width: 100%;
+  border: 0;
+  height: 450px;
+}
+
+

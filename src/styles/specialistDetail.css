@@ -1,0 +1,68 @@
+/* src/styles/specialistDetail.css */
+.specialist-detail {
+  margin-top: 50px;
+  text-align: left;
+}
+
+.text-section {
+  padding: 20px;
+}
+
+.specialist-title {
+  color: #4b72ff;
+  font-weight: bold;
+}
+
+.specialist-role {
+  color: #ffbc00;
+  font-size: 2.5rem;
+}
+
+.specialist-description {
+  margin: 20px 0;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* Aspect ratio 1:1 */
+}
+
+.specialist-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+h3 {
+  margin-top: 20px;
+  color: #4b72ff;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.background-shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  z-index: -1;
+}

@@ -1,0 +1,38 @@
+.real-time-news {
+    margin-top: 20px;
+  }
+  
+  .news-article {
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .news-article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .news-article h5 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .news-article p {
+    margin: 5px 0;
+  }
+  
+  .news-article a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .news-article a:hover {
+    text-decoration: underline;
+  }
+  
+  .news-article img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
