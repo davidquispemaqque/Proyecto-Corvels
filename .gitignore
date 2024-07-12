@@ -22,10 +22,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-progrmas instaladas
-mkdir backend
-cd backend
-npm init -y
-npm install express body-parser nodemailer cors
-npm install axios
 
+
+
+npm install framer-motion
+yarn add framer-motion
+npm install react-bootstrap bootstrap
+npm install react-icons

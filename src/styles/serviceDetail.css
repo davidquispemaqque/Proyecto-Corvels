@@ -1,0 +1,147 @@
+/* Hero Section: Estilos para la sección de héroe en la parte superior de la página */
+.hero-section {
+  background-color: #f8f9fa;
+  padding: 120px 0; /* Aumentar el padding para que baje más */
+  border-bottom: 1px solid #ab927b;
+  background: linear-gradient(135deg, #e5e9e6, #b2d79e); /* Fondo con degradado */
+  color: white;
+  margin-top: 60px; /* Añadir margen superior para separar del navbar */
+  margin-bottom: 40px; /* Añadir margen inferior */
+  position: relative;
+  z-index: 0;
+}
+.hero-sectio {
+  background-image: url('https://i.pinimg.com/564x/32/19/51/3219511fe5804687a4ee503584966d6c.jpg'); /* Reemplaza con la URL de tu imagen */
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* No repite la imagen */
+  color: white; /* Color del texto para asegurar que sea legible sobre la imagen */
+  padding: 120px 0; /* Espaciado interno para dar espacio al contenido */
+  border-bottom: 1px solid #e9ecef; /* Línea inferior */
+  margin-top: 60px; /* Margen superior para separar del navbar */
+  margin-bottom: 40px; /* Margen inferior */
+  position: relative;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro con transparencia */
+}
+
+
+/* Full Width Row: Estilos para contenedores de ancho completo */
+.full-width-row {
+  width: 85vw; /* El contenedor ocupa el 100% del ancho de la ventana */
+  margin-left: calc(-50vw + 50%); /* Centra el contenedor */
+}
+
+/* Full Width Image: Estilos para imágenes de ancho completo */
+.full-width-image {
+  width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Scrollspy Example: Estilos para el scroll de ejemplo */
+.scrollspy-example {
+  position: relative;
+  height: 400px; /* Altura del contenedor scroll */
+  overflow: auto; /* Añadir barra de desplazamiento */
+  margin-top: .5rem;
+}
+
+/* List Group Item: Estilos para los elementos de la lista */
+.list-group-item {
+  cursor: pointer; /* Cambia el cursor al pasar sobre el elemento */
+}
+
+/* List Group Item Active: Estilos para el elemento activo de la lista */
+.list-group-item.active {
+  background-color: #007bff; /* Fondo azul para el elemento activo */
+  color: white; /* Texto blanco para el elemento activo */
+}
+
+/* Service Detail Section: Estilos para la sección de detalles del servicio */
+.service-detail-section {
+  padding: 40px 0; /* Padding para separar contenido */
+}
+
+.service-detail-section img {
+  max-width: 100%; /* Imagen ocupa el ancho máximo del contenedor */
+  border-radius: 8px; /* Bordes redondeados para la imagen */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transición para transformaciones y sombras */
+}
+
+.service-detail-section img:hover {
+  transform: scale(1.05); /* Aumenta el tamaño al pasar el ratón */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Añadir sombra */
+}
+
+.service-detail-section h3 {
+  font-size: 1.75rem; /* Tamaño de fuente del título */
+  font-weight: bold; /* Texto en negrita */
+  color: #333; /* Color del texto */
+}
+
+.service-detail-section p {
+  font-size: 1rem; /* Tamaño de fuente del párrafo */
+  color: #555; /* Color del texto */
+  margin-bottom: 1rem; /* Margen inferior */
+}
+
+.service-detail-section ul {
+  padding-left: 0; /* Sin padding izquierdo */
+  list-style: none; /* Sin estilo de lista */
+}
+
+.service-detail-section li {
+  font-size: 1rem; /* Tamaño de fuente de los elementos de la lista */
+  color: #555; /* Color del texto */
+}
+
+/* Estilos para los iconos dentro de la sección de detalles del servicio */
+.service-detail-section .bi-check-circle-fill,
+.service-detail-section .bi-chevron-right,
+.service-detail-section .bi-award-fill,
+.service-detail-section .bi-people-fill {
+  font-size: 1.25rem; /* Tamaño de fuente de los iconos */
+}
+
+/* Estilos para el botón primario en la sección de detalles del servicio */
+.service-detail-section .btn-primary {
+  background-color: #6e8efb;
+  border: none;
+  transition: background-color 0.3s, transform 0.3s; /* Transición para color y transformación */
+}
+
+.service-detail-section .btn-primary:hover {
+  background-color: #e3c677;
+  transform: scale(1.05); /* Aumenta el tamaño al pasar el ratón */
+}
+
+/* Why Choose Us: Estilos para la sección "¿Por qué elegirnos?" */
+.why-choose-us {
+  margin-top: 2rem; /* Margen superior */
+}
+
+.why-choose-us .icon-container {
+  background-color: #007bff; /* Fondo azul para el contenedor del icono */
+  color: white; /* Color del texto blanco */
+  border-radius: 50%; /* Bordes redondeados */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px; /* Ancho del contenedor */
+  height: 60px; /* Altura del contenedor */
+}
+
+.why-choose-us h5 {
+  font-weight: bold; /* Texto en negrita */
+  margin-bottom: 0.5rem; /* Margen inferior */
+}
+
+.why-choose-us p {
+  margin: 0; /* Sin margen */
+}
+
+
+.hero-image {
+  width: 100%;
+  max-height: 350px; /* Ajusta la altura máxima de la imagen */
+  object-fit: cover;}
