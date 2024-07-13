@@ -8,7 +8,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 const Contact = () => {
   return (
     <Container fluid>
-      <section className="hero-section">
+      <section className="hero-contact">
         <div className="image-container">
           <Image src={contactImage} alt="Contactanos" className="hero-image" fluid />
           <div className="text-overlay">

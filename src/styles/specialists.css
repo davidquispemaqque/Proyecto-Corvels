@@ -1,41 +1,66 @@
 /* src/styles/specialists.css */
+
+.specialists-header {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-bottom: 60px;
+}
+
+.header-image {
+  width: 100%;
+  height: 350px; /* Ajusta la altura según tus necesidades */
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+.header-title {
+  position: absolute;
+  top: 65%; /* Ajusta la posición vertical */
+  left: 50%; /* Ajusta la posición horizontal */
+  transform: translate(-50%, -50%); /* Centra el texto */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo opaco */
+  padding: 90px 800px; /* Espaciado interno */
+  font-size: 3.5rem; /* Ajusta el tamaño de la fuente según tus necesidades */
+  color: white; /* Color del texto */
+}
+
 .specialists-container {
-    margin-top: 50px;
-  }
-  
-  .specialist-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .specialist-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  }
-  
-  .card-image-wrapper {
-    position: relative;
-    width: 100%;
-    padding-top: 75%; /* Aspect ratio 4:3 */
-    overflow: hidden;
-    border-radius: 5px 5px 0 0;
-  }
-  
-  .card-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
-  
-  .card-image-wrapper:hover .card-image {
-    transform: scale(1.1);
-  }
-  
-  .specialist-description {
-    margin-top: 10px;
-    color: #6c757d;
-  }
-  
+  margin-top: 50px;
+}
+
+.specialist-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.specialist-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-image-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 75%; /* Aspect ratio 4:3 */
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+
+.card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card-image-wrapper:hover .card-image {
+  transform: scale(1.1);
+}
+
+.specialist-description {
+  margin-top: 10px;
+  color: #6c757d;
+}

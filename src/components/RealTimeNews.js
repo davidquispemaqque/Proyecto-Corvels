@@ -29,7 +29,7 @@ const RealTimeNews = () => {
 
   return (
     <div className="real-time-news">
-      <h4>Noticias en Tiempo Real</h4>
+      <h4>Últimas Noticias</h4>
       {news.map((article, index) => (
         <Card key={index} className="news-article mb-3">
           <Card.Img variant="top" src={article.urlToImage || 'https://via.placeholder.com/150'} />

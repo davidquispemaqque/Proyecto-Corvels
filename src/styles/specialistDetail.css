@@ -1,11 +1,12 @@
 /* src/styles/specialistDetail.css */
 .specialist-detail {
-  margin-top: 50px;
+  margin-top: 200px;
   text-align: left;
 }
 
 .text-section {
   padding: 20px;
+  margin-top: -100px;
 }
 
 .specialist-title {
@@ -19,7 +20,7 @@
 }
 
 .specialist-description {
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 .image-wrapper {
@@ -32,8 +33,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
