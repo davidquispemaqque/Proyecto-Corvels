@@ -10,14 +10,16 @@ import Contact from './pages/Contact';
 import Blog from './pages/Blog';
 import Specialists from './pages/Specialists';
 import ServiceDetail from './pages/ServiceDetail';
-import './App.css'; // Asegúrate de que el archivo CSS global esté importado
 import SpecialistDetail from './pages/SpecialistDetail';
+import WhatsAppButton from './components/WhatsAppButton'; // Importa el nuevo componente
+import './App.css'; // Asegúrate de que el archivo CSS global esté importado
 
 function App() {
   return (
     <Router>
       <div>
         <CustomNavbar />
+        <WhatsAppButton /> {/* Añade el botón de WhatsApp aquí */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

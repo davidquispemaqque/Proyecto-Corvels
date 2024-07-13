@@ -17,7 +17,7 @@ const CustomNavbar = () => {
               className="d-inline-block align-top logo-img"
               alt="Corvels logo"
             />
-            <span className="ml-2 brand-name">CORVELS</span>
+            <span className="ml-2 brand-name">CORVEL'S</span>
           </Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

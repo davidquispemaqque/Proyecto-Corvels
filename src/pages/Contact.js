@@ -40,17 +40,19 @@ const Contact = () => {
                   <a href="tel:+5154218888">
                     <i className="fas fa-phone-alt"></i>
                     <div>
-                      <h5>Contacto</h5>
-                      <p>(054) 218888</p>
+                      <h5>Contactos Fijos</h5>
+                      <p>+51 953 762 677</p>
+                      <p>+51 959 342 211</p>
+                      <p>+51 952 870 388</p>
                     </div>
                   </a>
                 </div>
                 <div className="contact-method">
-                  <a href="https://wa.me/51952870388" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/51953762677" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-whatsapp"></i>
                     <div>
                       <h5>WhatsApp</h5>
-                      <p>+51 952 870 388</p>
+                      <p>+51 953 762 677</p>
                     </div>
                   </a>
                 </div>

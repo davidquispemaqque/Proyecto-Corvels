@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="footer-logo-wrapper">
               <img src={logo} alt="CORVELS Logo" className="footer-logo-img" />
             </div>
-            <h5>CORVELS</h5>
+            <h5>CORVEL'S</h5>
             <p>Somos una empresa con más de 20 años en el mercado local y regional</p>
           </Col>
           <Col md={4} className="footer-address">
