@@ -1,3 +1,14 @@
+/* imagenmisonVison */
+
+
+.full-width-image {
+
+  transition: transform 0.4s ease-in-out; /* Transición suave para el efecto de movimiento */
+}
+
+.full-width-image:hover {
+  transform: translateX(10px) translateY(10px); /* Mueve la imagen hacia la derecha y hacia abajo */
+}
 
 .rounded-shadow{
   width: 400px;

@@ -5,6 +5,10 @@ import { motion } from 'framer-motion';
 import { FaBriefcase, FaLock, FaUserTie, FaUsers } from 'react-icons/fa';
 import serviceDetails from '../data/serviceDetails';
 import '../styles/serviceDetail.css';
+import newImage from '../images/newImage.gif'; 
+import { Image } from 'react-bootstrap';
+import benefitsImage from '../images/benefits.png'; 
+
 
 const ServiceDetail = () => {
   const { id } = useParams();
@@ -17,24 +21,20 @@ const ServiceDetail = () => {
   return (
     <Container>
       <section className="hero-sectio text-center py-5">
-        <h1 className="display-4">{service.title}</h1>
+        <h1 className="display-4" >{service.title}</h1>
       </section>
 
       <Row>
-        <Col md={4}>
-          <div id="list-example" className="list-group">
-            <a className="list-group-item list-group-item-action" href="#description">Descripción</a>
-            <a className="list-group-item list-group-item-action" href="#points">Puntos</a>
-            {service.detailedProcedure && <a className="list-group-item list-group-item-action" href="#detailedProcedure">Procedimiento Detallado</a>}
-            <a className="list-group-item list-group-item-action" href="#benefits">Beneficios</a>
-          </div>
+      <Col md={4}>
+          <Image src={newImage} fluid className="new-image-gif" /> 
         </Col>
+        
         <Col md={8}>
           <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" className="scrollspy-example" tabIndex="0">
-            <h4 id="description">Descripción</h4>
+            <h4 id="description" className="desco">Descripción</h4>
             <p>{service.description}</p>
 
-            <h4 id="points">Puntos</h4>
+            <h4 id="points" className="desco">Puntos</h4>
             {service.points && (
               <ul className="list-unstyled">
                 {service.points.map((point, index) => (
@@ -47,7 +47,7 @@ const ServiceDetail = () => {
 
             {service.detailedProcedure && (
               <>
-                <h4 id="detailedProcedure">Procedimiento Detallado</h4>
+                <h4 id="detailedProcedure" className="desco">Procedimiento Detallado</h4>
                 <ul className="list-unstyled">
                   {service.detailedProcedure.map((step, index) => (
                     <li key={index} className="mb-2">
@@ -58,21 +58,15 @@ const ServiceDetail = () => {
               </>
             )}
 
-            <h4 id="benefits">Beneficios</h4>
+            <h4 id="benefits" className="desco">Beneficios</h4>
             {service.benefits && (
-              <ul className="list-unstyled">
-                {service.benefits.map((benefit, index) => (
-                  <li key={index} className="mb-2">
-                    <i className="bi bi-award-fill text-warning me-2"></i>{benefit}
-                  </li>
-                ))}
-              </ul>
+              <Image src={benefitsImage} fluid className="benefits-image-class" />
             )}
           </div>
         </Col>
       </Row>
 
-      <h4 id="whyChooseUs" className="mt-5">¿Por qué elegirnos?</h4>
+      <h4 id="whyChooseUs" className="desco">¿Por qué elegirnos?</h4>
       {service.whyChooseUs && (
         <Row className="why-choose-us mt-4">
           {service.whyChooseUs.map((reason, index) => (

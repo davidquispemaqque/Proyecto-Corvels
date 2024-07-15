@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button, Card, Image, Carousel } from 'react-bootstrap';
-import { Link } from 'react-router-dom'; // Importa Link de react-router-dom
+import { Link } from 'react-router-dom';
 import '../styles/home.css';
 import inicio1 from '../images/inicio1.jpg';
 import inicio2 from '../images/inicio2.webp';
@@ -9,6 +9,8 @@ import logo from '../images/logo.png';
 import agua from '../images/agua.png';
 import ambiente from '../images/ambiente.jpg';
 import luz from '../images/luz.png';
+import gifImage from '../images/beneficios.gif';
+import VideoCarousel from '../components/VideoCarousel'; // Asegúrate de que la ruta es correcta
 
 function Home() {
   return (
@@ -108,18 +110,23 @@ function Home() {
 
         <section className="my-5 why-choose-us">
           <Row>
-            <Col md={8} className="mx-auto text">
+            <Col md={9} className="mx-auto text text-center">
               <h2 className="section-title">¿POR QUÉ ESCOGERNOS?</h2>
-              <ul className="reasons-list">
-                <li>Soluciones integrales para saneamiento ambiental.</li>
-                <li>Tecnología de punta para una solución efectiva.</li>
-                <li>Productos de calidad para garantizar la eliminación de plagas y gérmenes.</li>
-                <li>Mejora de procesos y garantía de calidad en la industria alimentaria.</li>
-                <li>Utiliza materiales y productos certificados con hojas de datos de seguridad, fichas técnicas y resoluciones directorales vigentes.</li>
-                <li>Contamos con un equipo capacitado y competente en control de plagas y SSOMAC.</li>
-              </ul>
+              <Image src={gifImage} fluid className="beneficios-gif" />
             </Col>
           </Row>
+        </section>
+
+        {/* Agrega el componente VideoCarousel aquí */}
+        <section className="my-5 video-carousel-section">
+          <Container>
+            <Row>
+              <Col>
+                <h2 className="video-carousel-title">Conoce más de nosotros</h2>
+                <VideoCarousel />
+              </Col>
+            </Row>
+          </Container>
         </section>
 
         <section className="my-5 team-section">

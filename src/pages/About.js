@@ -6,6 +6,7 @@ import quienesSomosImg from '../images/quienes_somos.jpg';
 import misionImg from '../images/mision.jpg';
 import visionImg from '../images/vision.jpg';
 import '../styles/about.css';
+import missionVisionImg from '../images/mission-vision.png';
 
 const About = () => {
   const fadeInUp = {
@@ -47,35 +48,12 @@ const About = () => {
         </section>
 
         <section className="my-5 mission-vision-section">
-          <Row>
-            <Col md={6}>
-              <motion.div initial="hidden" animate="visible" variants={fadeInUp}>
-                <Card className="mb-4 shadow-sm">
-                  <Card.Img variant="top" src={misionImg} className="small-image rounded-shadow" fluid />
-                  <Card.Body>
-                    <Card.Title>Misión</Card.Title>
-                    <Card.Text>
-                      Ser una empresa dedicada al asesoramiento, venta, saneamiento ambiental y limpieza, con el propósito de brindar satisfacción al cliente antes, durante y después de la ejecución de nuestros servicios. Nos caracterizamos por trabajar con los mejores estándares de calidad física, ambiental y laboral dentro de los plazos establecidos y comprometidos por formar sólidas y duraderas relaciones con nuestros clientes y socios.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </motion.div>
-            </Col>
-            <Col md={6}>
-              <motion.div initial="hidden" animate="visible" variants={fadeInUp}>
-                <Card className="mb-4 shadow-sm">
-                  <Card.Img variant="top" src={visionImg} className="small-image rounded-shadow" fluid/>
-                  <Card.Body>
-                    <Card.Title>Visión</Card.Title>
-                    <Card.Text>
-                      Ser un referente en el rubro de servicios y ventas, estando posicionados como una de las mejores empresas del rubro a nivel local y con proyecciones a nivel nacional. Asimismo, lograr la plena satisfacción de nuestro equipo de colaboradores y clientes, fomentando el trabajo en equipo, diversificación del servicio y compromiso para la creación de valor social.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </motion.div>
-            </Col>
-          </Row>
-        </section>
+        <Row>
+          <Col className="text-center">
+            <Image src={missionVisionImg} className="full-width-image" fluid />
+          </Col>
+        </Row>
+      </section>
       </Container>
     </Container>
   );

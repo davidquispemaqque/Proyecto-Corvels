@@ -1,3 +1,9 @@
+/* ANIMACION */
+
+
+
+
+
 .whatsapp-float-button {
   position: fixed;
   width: 60px;
@@ -13,6 +19,7 @@
   z-index: 1000;
   border: none;
   cursor: pointer;
+  animation: bounce 2s infinite; /* Añadir esta línea para la animación */
 }
 
 .whatsapp-float-button img {
@@ -72,4 +79,17 @@
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+/* Animación para el icono de WhatsApp */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-50px);
+  }
+  60% {
+    transform: translateY(-20px);
+  }
 }
