@@ -24,7 +24,7 @@ const CustomNavbar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             <LinkContainer to="/">
-              <Nav.Link>Inicio</Nav.Link>
+              <Nav.Link>Inicio corvels</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/about">
               <Nav.Link>Nosotros</Nav.Link>
