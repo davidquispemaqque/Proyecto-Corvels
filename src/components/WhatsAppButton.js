@@ -11,7 +11,7 @@ const WhatsAppButton = () => {
 
   return (
     <div>
-      <div className={`| ${open ? 'open' : ''}`}>
+      <div className={`whatsapp-chat ${open ? 'open' : ''}`}>
         <div className="whatsapp-header">
           <span>Corvel´s Servicios Generales</span>
           <button onClick={handleClick} className="close-button">&times;</button>
@@ -33,3 +33,4 @@ const WhatsAppButton = () => {
 };
 
 export default WhatsAppButton;
+
