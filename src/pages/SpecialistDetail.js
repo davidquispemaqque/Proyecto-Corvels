@@ -34,11 +34,10 @@ const SpecialistDetail = () => {
       <Row className="align-items-center">
         <Col md={6}>
           <div className="text-section">
-            <h2 className="specialist-title">Expertos</h2>
+            <h2 className="specialist-title">PERFIL PROFECIONAL</h2>
             <h1 className="specialist-role">{specialist.role}</h1>
             <p className="specialist-description">{specialist.bio}</p>
-            <h3>Educación</h3>
-            <p>{specialist.education}</p>
+            
             <h3>Experiencia</h3>
             <p>{specialist.experience}</p>
             <h3>Habilidades</h3>
@@ -47,6 +46,8 @@ const SpecialistDetail = () => {
                 <li key={index}>{skill}</li>
               ))}
             </ul>
+            <h3>Educación</h3>
+            <p>{specialist.education}</p>
             <Button variant="primary" className="me-2" href={specialist.cvLink} target="_blank">Ver CV</Button>
             <Button variant="outline-primary" onClick={() => navigate('/specialists')}>Volver</Button>
           </div>

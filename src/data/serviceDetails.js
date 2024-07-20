@@ -1,30 +1,42 @@
+// Desratizacion
 import desratizacionImg1 from '../images/desratizacion1.jpg';
 import desratizacionImg2 from '../images/desratizacion2.jpg';
 import desratizacionImg3 from '../images/desratizacion3.jpg';
+import desratizacionImg4 from '../images/desratizacion4.jpg';
+import desratizacionImg5 from '../images/desratizacion5.jpg';
+
 // desinfecion
 import desinfeccionImg1 from '../images/Desinfección1.jpg';
 import desinfeccionImg2 from '../images/Desinfección2.jpg';
 import desinfeccionImg3 from '../images/Desinfección3.jpg';
 import desinfeccionImg4 from '../images/Desinfección4.jpg';
 
+// Desinsectación
 import DesinsectacionImg1 from '../images/Desinsectación1.jpg';
 import DesinsectacionImg2 from '../images/Desinsectación2.jpg';
 import DesinsectacionImg3 from '../images/Desinsectación3.jpg';
 import DesinsectacionImg4 from '../images/Desinsectación4.jpg';
+import DesinsectacionImg5 from '../images/Desinsectación5.jpg';
 
+// Trampas de Luz
 import TrampasImg1 from '../images/Trampas1.jpg';
 import TrampasImg2 from '../images/Trampas2.jpg';
 import TrampasImg3 from '../images/Trampas3.jpg';
 import TrampasImg4 from '../images/Trampas4.jpg';
-// Importa más imágenes según sea necesario
+
+// Limpieza de tanques
 import TanquesImg1 from '../images/Tanques1.jpg';
 import TanquesImg2 from '../images/Tanques2.jpg';
 import TanquesImg3 from '../images/Tanques3.jpg';
+import TanquesImg4 from '../images/Tanques4.jpg';
+import TanquesImg5 from '../images/Tanques5.jpg';
+import TanquesImg6 from '../images/Tanques6.jpg';
 
 
-import controlImg1 from '../images/control1.jpeg';
-import controlImg2 from '../images/control1.jpeg';
-import controlImg3 from '../images/control1.jpeg';
+import aviarImg1 from '../images/Aviar1.jpg';
+import aviarImg2 from '../images/Aviar2.jpg';
+import aviarImg3 from '../images/Aviar3.jpg';
+import aviarImg4 from '../images/Aviar4.jpg';
 
 import AmbientesImg1 from '../images/Ambientes1.jpg';
 import AmbientesImg2 from '../images/Ambientes2.jpg';
@@ -39,7 +51,7 @@ const serviceDetails = [
   {
     id: 1,
     title: 'Desratización',
-    images: [desratizacionImg1, desratizacionImg2, desratizacionImg3],
+    images: [desratizacionImg1, desratizacionImg2, desratizacionImg3, desratizacionImg4, desratizacionImg5],
     description: 'La desratización es un proceso crucial para el control de roedores en diferentes entornos, asegurando un ambiente limpio y seguro.',
     points: [
       'Selección del sitio.',
@@ -93,7 +105,7 @@ const serviceDetails = [
   {
     id: 3,
     title: 'Desinsectación',
-    images: [DesinsectacionImg1, DesinsectacionImg2, DesinsectacionImg3, DesinsectacionImg4],
+    images: [DesinsectacionImg1, DesinsectacionImg2, DesinsectacionImg3, DesinsectacionImg4, DesinsectacionImg5],
     description: 'La desinsectación es el proceso de eliminación de insectos para evitar su proliferación y los problemas de salud que pueden causar.',
     points: [
       'Preparación del equipo.',
@@ -149,7 +161,7 @@ const serviceDetails = [
   {
     id: 5,
     title: 'Limpieza de Tanques de Agua / Cisternas',
-    images: [TanquesImg1, TanquesImg2, TanquesImg3],
+    images: [TanquesImg1, TanquesImg2, TanquesImg3, TanquesImg4, TanquesImg5, TanquesImg6],
     description: 'La limpieza de tanques de agua y cisternas es vital para asegurar la calidad del agua almacenada.',
     points: [
       'Colocación / fijación de escalera.',
@@ -176,7 +188,7 @@ const serviceDetails = [
   {
     id: 6,
     title: 'Control Aviar',
-    images: [controlImg1, controlImg2, controlImg3],
+    images: [aviarImg1, aviarImg2, aviarImg3, aviarImg4],
     description: 'El control aviar implica medidas para evitar la presencia y anidamiento de aves en áreas no deseadas.',
     points: [
       'Colocación de arnés o línea de vida.',
