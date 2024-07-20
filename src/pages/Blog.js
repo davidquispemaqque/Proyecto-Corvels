@@ -2,6 +2,7 @@
 import React from 'react';
 import { Container, Row, Col, Card, Carousel } from 'react-bootstrap';
 import RealTimeNews from '../components/RealTimeNews';
+import Header from '../components/Header'; // Importa el componente Header
 import '../styles/blog.css';
 import headerImage from '../images/paisaje.jpg'; // Nueva imagen para el encabezado
 import blogPostsData from '../data/blogPostsData'; // Importa los datos del blog
@@ -9,11 +10,7 @@ import blogPostsData from '../data/blogPostsData'; // Importa los datos del blog
 const Blog = () => {
   return (
     <div>
-      {/* Encabezado grande */}
-      <div className="blog-header">
-        <img src={headerImage} alt="Blog Header" className="header-image" />
-        <h1 className="header-title">Nuestro Blog</h1>
-      </div>
+      <Header title="Nuestro Blog" image={headerImage} />
       
       <Container className="blog-container">
         <Row>
@@ -35,7 +32,6 @@ const Blog = () => {
                     </Card.Body>
                   </Card>
                 </Col>
-                
               ))}
             </Row>
           </Col>

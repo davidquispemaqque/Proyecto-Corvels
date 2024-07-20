@@ -2,6 +2,7 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import specialists from '../data/specialists';
+import Header from '../components/Header'; // Importa el componente Header
 import '../styles/specialists.css'; // Asegúrate de importar el CSS
 
 // Importa las imágenes
@@ -12,17 +13,13 @@ import headerImage from '../images/grupo.jpg'; // Nueva imagen para el encabezad
 const Specialists = () => {
   // Mapea las imágenes a los identificadores
   const imageMap = {
-    'paisaje.jpg': paisajeImg,
-    'imagen.png': imagenImg,
+    'persona.jpg': paisajeImg,
+    'mujer.jpg': imagenImg,
   };
 
   return (
     <div>
-      {/* Encabezado grande */}
-      <div className="specialists-header">
-        <img src={headerImage} alt="Header" className="header-image" />
-        <h1 className="header-title">Nuestros Especialistas</h1>
-      </div>
+      <Header title="Nuestros Especialistas" image={headerImage} />
 
       <Container className="specialists-container">
         <Row>

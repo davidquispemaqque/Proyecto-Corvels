@@ -1,22 +1,16 @@
+// src/pages/Contact.js
 import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import contactImage from '../images/imagen.png';
 import smallImage from '../images/corvel.jpg';
+import Header from '../components/Header'; // Importa el componente Header
 import '../styles/contact.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Contact = () => {
   return (
     <Container fluid>
-      <section className="hero-contact">
-        <div className="image-container">
-          <Image src={contactImage} alt="Contactanos" className="hero-image" fluid />
-          <div className="text-overlay">
-            <h1>CONTACTANOS</h1>
-          </div>
-        </div>
-      </section>
-
+      <Header title="Contactos" image={contactImage} />
       <Container>
         <section className="contact-details my-5">
           <Row>

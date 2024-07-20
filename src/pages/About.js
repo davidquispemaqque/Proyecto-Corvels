@@ -1,12 +1,12 @@
+// src/pages/About.js
 import React from 'react';
-import { Container, Row, Col, Image, Card } from 'react-bootstrap';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import sobreNosotrosImg from '../images/sobre_nosotros.jpg';
 import quienesSomosImg from '../images/quienes_somos.jpg';
-import misionImg from '../images/mision.jpg';
-import visionImg from '../images/vision.jpg';
-import '../styles/about.css';
 import missionVisionImg from '../images/mission-vision.png';
+import Header from '../components/Header';
+import '../styles/about.css';
 
 const About = () => {
   const fadeInUp = {
@@ -16,15 +16,7 @@ const About = () => {
 
   return (
     <Container fluid className="about-container">
-     <section className="hero-nosotros">
-  <div className="image-container position-relative">
-    <Image src={sobreNosotrosImg} alt="Sobre Nosotros" className="hero-image" />
-    <div className="text-overlay position-absolute top-50 start-50 translate-middle text-white">
-      <h1>SOBRE NOSOTROS</h1>
-    </div>
-  </div>
-</section>
-
+      <Header title="Sobre Nosotros" image={sobreNosotrosImg} />
       <Container>
         <section className="my-5 quienes-somos-section">
           <Row>
@@ -48,37 +40,15 @@ const About = () => {
         </section>
 
         <section className="my-5 mission-vision-section">
-        <Row>
-          <Col className="text-center">
-            <Image src={missionVisionImg} className="full-width-image" fluid />
-          </Col>
-        </Row>
-      </section>
+          <Row>
+            <Col className="text-center">
+              <Image src={missionVisionImg} className="full-width-image" fluid />
+            </Col>
+          </Row>
+        </section>
       </Container>
     </Container>
   );
 };
 
 export default About;
-
-{/* <section className="my-5">
-            <h2>Nuestro portafolio</h2>
-            <p>
-                Somos una empresa de saneamiento ambiental homologada, nuestro personal cuenta con más de 20 años de experiencia en el trabajo de desinsectación, desratización y desinfección. Trabajamos cumpliendo a cabalidad las normas técnicas y exigencias de calidad y seguridad, pero sobre todo, nos aseguramos de cumplir a plena satisfacción de nuestros clientes.
-            </p>
-            
-            <Row className="mt-4">
-                <Col xs={3}>
-                    <Image src={portafolioImg} fluid />
-                </Col>
-                <Col xs={3}>
-                    <Image src={portafolioImg} fluid />
-                </Col>
-                <Col xs={3}>
-                    <Image src={portafolioImg} fluid />
-                </Col>
-                <Col xs={3}>
-                    <Image src={portafolioImg} fluid />
-                </Col>
-            </Row>
-        </section> */}

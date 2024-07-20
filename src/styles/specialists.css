@@ -14,17 +14,6 @@
   opacity: 0.7;
 }
 
-.header-title {
-  position: absolute;
-  top: 65%; /* Ajusta la posición vertical */
-  left: 50%; /* Ajusta la posición horizontal */
-  transform: translate(-50%, -50%); /* Centra el texto */
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo opaco */
-  padding: 90px 800px; /* Espaciado interno */
-  font-size: 3.5rem; /* Ajusta el tamaño de la fuente según tus necesidades */
-  color: white; /* Color del texto */
-}
-
 .specialists-container {
   margin-top: 50px;
 }

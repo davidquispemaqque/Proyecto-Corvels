@@ -27,7 +27,7 @@ const CustomNavbar = () => {
               <Nav.Link>Inicio</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/about">
-              <Nav.Link>Nosotros corvels</Nav.Link>
+              <Nav.Link>Nosotros</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/services">
               <Nav.Link>Servicios</Nav.Link>
