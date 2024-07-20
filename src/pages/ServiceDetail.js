@@ -99,7 +99,7 @@ const ServiceDetail = () => {
           <Col md={9} className="portfolio-image-container">
             <Carousel>
               {service.images.map((image, index) => (
-                <Carousel.Item key={index} className="carousel-item">
+                <Carousel.Item key={index} className="carousel-service">
                   <img src={image} alt={`Slide ${index}`} className="d-block w-100" />
                 </Carousel.Item>
               ))}

@@ -10,6 +10,7 @@ import services from '../data/services'; // Importa los servicios desde el archi
 import gifImage from '../images/beneficios.gif';
 import VideoCarousel from '../components/VideoCarousel'; // Asegúrate de que la ruta es correcta
 
+
 function Home() {
   return (
     <>
@@ -61,60 +62,60 @@ function Home() {
         </section>
 
         <section className="my-5">
-          <Row className="align-items-center">
-            <Col style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <h2 className="services-title">Servicios profesionales que ofrecemos</h2>
-              <Link to="/services">
-                <Button variant="success" size="lg" className="ml-3 services-button">Ver más</Button>
-              </Link>
-            </Col>
-          </Row>
-          <Carousel>
-            {services.map((service, index) => (
-              <Carousel.Item key={service.id}>
-                <Row>
-                  <Col md={4}>
-                    <Card className="mb-4 card-custom">
-                      <Card.Img variant="top" src={service.image} className="card-img-top" />
-                      <Card.Body className="card-body">
-                        <Card.Title className="card-title">{service.title}</Card.Title>
-                        <Link to={`/service/${service.id}`}>
-                          <Button variant="success" className="services-button services-button-align-right">Ver más</Button>
-                        </Link>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                  {services[index + 1] && (
-                    <Col md={4}>
-                      <Card className="mb-4 card-custom">
-                        <Card.Img variant="top" src={services[index + 1].image} className="card-img-top" />
-                        <Card.Body className="card-body">
-                          <Card.Title className="card-title">{services[index + 1].title}</Card.Title>
-                          <Link to={`/service/${services[index + 1].id}`}>
-                            <Button variant="success" className="services-button services-button-align-right">Ver más</Button>
-                          </Link>
-                        </Card.Body>
-                      </Card>
-                    </Col>
-                  )}
-                  {services[index + 2] && (
-                    <Col md={4}>
-                      <Card className="mb-4 card-custom">
-                        <Card.Img variant="top" src={services[index + 2].image} className="card-img-top" />
-                        <Card.Body className="card-body">
-                          <Card.Title className="card-title">{services[index + 2].title}</Card.Title>
-                          <Link to={`/service/${services[index + 2].id}`}>
-                            <Button variant="success" className="services-button services-button-align-right">Ver más</Button>
-                          </Link>
-                        </Card.Body>
-                      </Card>
-                    </Col>
-                  )}
-                </Row>
-              </Carousel.Item>
-            ))}
-          </Carousel>
-        </section>
+      <Row className="align-items-center">
+        <Col style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <h2 className="services-title">Servicios profesionales que ofrecemos</h2>
+          <Link to="/services">
+            <Button variant="success" size="lg" className="ml-3 services-button">Ver más</Button>
+          </Link>
+        </Col>
+      </Row>
+      <Carousel interval={null}>
+        {services.map((service, index) => (
+          <Carousel.Item key={service.id}>
+            <Row>
+              <Col md={4}>
+                <Card className="mb-4 card-custom">
+                  <Card.Img variant="top" src={service.image} className="card-img-top" />
+                  <Card.Body className="card-body">
+                    <Card.Title className="card-title">{service.title}</Card.Title>
+                    <Link to={`/service/${service.id}`}>
+                      <Button variant="success" className="services-button services-button-align-right">Ver más</Button>
+                    </Link>
+                  </Card.Body>
+                </Card>
+              </Col>
+              {services[index + 1] && (
+                <Col md={4}>
+                  <Card className="mb-4 card-custom">
+                    <Card.Img variant="top" src={services[index + 1].image} className="card-img-top" />
+                    <Card.Body className="card-body">
+                      <Card.Title className="card-title">{services[index + 1].title}</Card.Title>
+                      <Link to={`/service/${services[index + 1].id}`}>
+                        <Button variant="success" className="services-button services-button-align-right">Ver más</Button>
+                      </Link>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              )}
+              {services[index + 2] && (
+                <Col md={4}>
+                  <Card className="mb-4 card-custom">
+                    <Card.Img variant="top" src={services[index + 2].image} className="card-img-top" />
+                    <Card.Body className="card-body">
+                      <Card.Title className="card-title">{services[index + 2].title}</Card.Title>
+                      <Link to={`/service/${services[index + 2].id}`}>
+                        <Button variant="success" className="services-button services-button-align-right">Ver más</Button>
+                      </Link>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              )}
+            </Row>
+          </Carousel.Item>
+        ))}
+      </Carousel>
+    </section>
 
         <section className="my-5 why-choose-us">
           <Row>
