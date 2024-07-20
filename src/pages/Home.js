@@ -6,9 +6,7 @@ import inicio1 from '../images/inicio1.jpg';
 import inicio2 from '../images/inicio2.webp';
 import inicio3 from '../images/inicio3.webp';
 import logo from '../images/logo.png';
-import agua from '../images/agua.png';
-import ambiente from '../images/ambiente.jpg';
-import luz from '../images/luz.png';
+import services from '../data/services'; // Importa los servicios desde el archivo services.js
 import gifImage from '../images/beneficios.gif';
 import VideoCarousel from '../components/VideoCarousel'; // Asegúrate de que la ruta es correcta
 
@@ -71,41 +69,51 @@ function Home() {
               </Link>
             </Col>
           </Row>
-          <Row>
-            <Col md={4}>
-              <Card className="mb-4 card-custom">
-                <Card.Img variant="top" src={luz} className="card-img-top" />
-                <Card.Body className="card-body">
-                  <Card.Title className="card-title">Servicio de Trampas de Luz</Card.Title>
-                  <Link to="/service/2">
-                    <Button variant="success" className="services-button services-button-align-right">Ver más</Button>
-                  </Link>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4}>
-              <Card className="mb-4 card-custom">
-                <Card.Img variant="top" src={agua} className="card-img-top" />
-                <Card.Body className="card-body">
-                  <Card.Title className="card-title">Limpieza y desinfección de pozos de agua</Card.Title>
-                  <Link to="/service/1">
-                    <Button variant="success" className="services-button services-button-align-right">Ver más</Button>
-                  </Link>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4}>
-              <Card className="mb-4 card-custom">
-                <Card.Img variant="top" src={ambiente} className="card-img-top" />
-                <Card.Body className="card-body">
-                  <Card.Title className="card-title">Limpieza de Ambientes</Card.Title>
-                  <Link to="/service/3">
-                    <Button variant="success" className="services-button services-button-align-right">Ver más</Button>
-                  </Link>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
+          <Carousel>
+            {services.map((service, index) => (
+              <Carousel.Item key={service.id}>
+                <Row>
+                  <Col md={4}>
+                    <Card className="mb-4 card-custom">
+                      <Card.Img variant="top" src={service.image} className="card-img-top" />
+                      <Card.Body className="card-body">
+                        <Card.Title className="card-title">{service.title}</Card.Title>
+                        <Link to={`/service/${service.id}`}>
+                          <Button variant="success" className="services-button services-button-align-right">Ver más</Button>
+                        </Link>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                  {services[index + 1] && (
+                    <Col md={4}>
+                      <Card className="mb-4 card-custom">
+                        <Card.Img variant="top" src={services[index + 1].image} className="card-img-top" />
+                        <Card.Body className="card-body">
+                          <Card.Title className="card-title">{services[index + 1].title}</Card.Title>
+                          <Link to={`/service/${services[index + 1].id}`}>
+                            <Button variant="success" className="services-button services-button-align-right">Ver más</Button>
+                          </Link>
+                        </Card.Body>
+                      </Card>
+                    </Col>
+                  )}
+                  {services[index + 2] && (
+                    <Col md={4}>
+                      <Card className="mb-4 card-custom">
+                        <Card.Img variant="top" src={services[index + 2].image} className="card-img-top" />
+                        <Card.Body className="card-body">
+                          <Card.Title className="card-title">{services[index + 2].title}</Card.Title>
+                          <Link to={`/service/${services[index + 2].id}`}>
+                            <Button variant="success" className="services-button services-button-align-right">Ver más</Button>
+                          </Link>
+                        </Card.Body>
+                      </Card>
+                    </Col>
+                  )}
+                </Row>
+              </Carousel.Item>
+            ))}
+          </Carousel>
         </section>
 
         <section className="my-5 why-choose-us">
@@ -117,7 +125,6 @@ function Home() {
           </Row>
         </section>
 
-        {/* Agrega el componente VideoCarousel aquí */}
         <section className="my-5 video-carousel-section">
           <Container>
             <Row>

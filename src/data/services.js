@@ -1,11 +1,11 @@
 // src/data/services.js
-import desratizacionImg from '../images/agua.png';
-import desinfeccionImg from '../images/agua.png';
-import desinsectacionImg from '../images/agua.png';
-import trampasImg from '../images/agua.png';
-import tanquesImg from '../images/agua.png';
-import controlAviarImg from '../images/agua.png';
-import limpiezaAmbientesImg from '../images/agua.png';
+import desratizacionImg from '../images/1.jpg';
+import desinfeccionImg from '../images/2.jpg';
+import desinsectacionImg from '../images/3.jpg';
+import trampasImg from '../images/4.jpg';
+import tanquesImg from '../images/5.jpg';
+import controlAviarImg from '../images/6.jpg';
+import limpiezaAmbientesImg from '../images/7.jpg';
 
 const services = [
   {
@@ -28,7 +28,7 @@ const services = [
   },
   {
     id: 4,
-    title: 'Servicio de Trampas de Luz e Insectocutores',
+    title: 'Trampas de Luz e Insectocutores',
     image: trampasImg,
     icon: 'fa-lightbulb' // Icono de Font Awesome
   },
