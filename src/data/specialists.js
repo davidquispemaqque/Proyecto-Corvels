@@ -16,11 +16,11 @@ const specialists = [
     "name": "Sarai Tapia",
     "role": "Desarrolladora Backend",
     "image": "sarai.jpg",
-    "bio": "Mi nombre es Sarai Choqquepata Tapia, especialista en Diseño y Desarrollo de Software, con conocimientos en desarrollo web, gestión de proyectos y programación. Busco oportunidades para adquirir experiencia práctica en el desarrollo de software y aplicaciones innovadoras. Me apasiona trabajar en equipo y participar en proyectos tecnológicos, valorando la comunicación y cooperación para lograr objetivos comunes. Siempre estoy dispuesto a aportar ideas y aprender de los demás",
+    "bio": "Mi nombre es Sarai Choqquepata Tapia, especialista en Diseño y Desarrollo de Software, con conocimientos en desarrollo web, gestión de proyectos y programación. Busco oportunidades para adquirir experiencia práctica en el desarrollo de software y aplicaciones innovadoras. Me apasiona trabajar en equipo y participar en proyectos tecnológicos, valorando la comunicación y cooperación para lograr objetivos comunes.",
     "phone": "+51 920 871 944",
     "email": "saraichoquepata12@gmail.com",
     "skills": ["Responsable", "Puntual", "Comunicación efectiva", "Empatía", "Proactividad"],
-    "experience": "Proyectos realizados: [describe tus proyectos aquí]"
+    "experience": "Participé en una Hackathon de Innovación Social organizada por el BCP, desarrollando soluciones tecnológicas para problemas sociales. También he creado páginas web y sitios de comercio electrónico, optimizando la experiencia del usuario."
   },
   {
     "id": 3,

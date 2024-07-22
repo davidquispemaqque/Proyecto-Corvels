@@ -15,36 +15,36 @@ function Home() {
   return (
     <>
       <div className="full-width-carousel">
-        <Carousel id="carouselExampleAutoplaying" data-bs-ride="carousel" interval={1000}>
-          <Carousel.Item className="carousel-item active">
-            <img src={inicio1} className="d-block w-100" alt="Servicios de Saneamiento" />
-            <div className="text-overlay">
-              <h1>SERVICIOS DE SANEAMIENTO AMBIENTAL Y CONTROL DE PLAGAS</h1>
-              <Link to="/contact">
-                <Button variant="success" size="lg">CONTÁCTANOS</Button>
-              </Link>
-            </div>
-          </Carousel.Item>
-          <Carousel.Item className="carousel-item">
-            <img src={inicio2} className="d-block w-100" alt="Servicios de Saneamiento" />
-            <div className="text-overlay">
-              <h1>SERVICIOS DE SANEAMIENTO AMBIENTAL Y CONTROL DE PLAGAS</h1>
-              <Link to="/contact">
-                <Button variant="success" size="lg">CONTÁCTANOS</Button>
-              </Link>
-            </div>
-          </Carousel.Item>
-          <Carousel.Item className="carousel-item">
-            <img src={inicio3} className="d-block w-100" alt="Servicios de Saneamiento" />
-            <div className="text-overlay">
-              <h1>SERVICIOS DE SANEAMIENTO AMBIENTAL Y CONTROL DE PLAGAS</h1>
-              <Link to="/contact">
-                <Button variant="success" size="lg">CONTÁCTANOS</Button>
-              </Link>
-            </div>
-          </Carousel.Item>
-        </Carousel>
-      </div>
+      <Carousel id="carouselExampleAutoplaying" data-bs-ride="carousel" interval={1000}>
+        <Carousel.Item>
+          <img src={inicio1} className="d-block w-100" alt="Servicios de Saneamiento" />
+          <div className="text-overlay">
+            <h1>SERVICIOS DE SANEAMIENTO AMBIENTAL Y CONTROL DE PLAGAS</h1>
+            <Link to="/contact">
+              <Button variant="success" size="lg">CONTÁCTANOS</Button>
+            </Link>
+          </div>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img src={inicio2} className="d-block w-100" alt="Servicios de Saneamiento" />
+          <div className="text-overlay">
+            <h1>SERVICIOS DE SANEAMIENTO AMBIENTAL Y CONTROL DE PLAGAS</h1>
+            <Link to="/contact">
+              <Button variant="success" size="lg">CONTÁCTANOS</Button>
+            </Link>
+          </div>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img src={inicio3} className="d-block w-100" alt="Servicios de Saneamiento" />
+          <div className="text-overlay">
+            <h1>SERVICIOS DE SANEAMIENTO AMBIENTAL Y CONTROL DE PLAGAS</h1>
+            <Link to="/contact">
+              <Button variant="success" size="lg">CONTÁCTANOS</Button>
+            </Link>
+          </div>
+        </Carousel.Item>
+      </Carousel>
+    </div>
       <Container className="mt-5">
         <section className="my-5 who-we-are-section">
           <Row>
