@@ -6,13 +6,13 @@ import specialists from '../data/specialists';
 import '../styles/specialistDetail.css';
 
 // Importa las imágenes
-import paisajeImg from '../images/persona.jpg';
-import imagenImg from '../images/mujer.jpg';
+import personaImg from '../images/persona.jpg';
+import mujerImg from '../images/mujer.jpg';
 
 // Mapea las imágenes a los identificadores
 const imageMap = {
-  'paisaje.jpg': paisajeImg,
-  'imagen.png': imagenImg,
+  'persona.jpg': personaImg,
+  'mujer.jpg': mujerImg,
 };
 
 const SpecialistDetail = () => {
@@ -34,7 +34,7 @@ const SpecialistDetail = () => {
       <Row className="align-items-center">
         <Col md={6}>
           <div className="text-section">
-            <h2 className="specialist-title">PERFIL PROFECIONAL</h2>
+            <h2 className="specialist-title">PERFIL PROFESIONAL</h2>
             <h1 className="specialist-role">{specialist.role}</h1>
             <p className="specialist-description">{specialist.bio}</p>
             
@@ -46,8 +46,9 @@ const SpecialistDetail = () => {
                 <li key={index}>{skill}</li>
               ))}
             </ul>
-            <h3>Educación</h3>
-            <p>{specialist.education}</p>
+            <h3>Contactos</h3>
+            <p>Celular: {specialist.phone}</p>
+            <p>Correo: {specialist.email}</p>
             <Button variant="primary" className="me-2" href={specialist.cvLink} target="_blank">Ver CV</Button>
             <Button variant="outline-primary" onClick={() => navigate('/specialists')}>Volver</Button>
           </div>
