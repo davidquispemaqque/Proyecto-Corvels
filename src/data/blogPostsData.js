@@ -1,4 +1,3 @@
-import featuredImage from '../images/inicio1.jpg';
 import blogImage1 from '../images/Ambientes1.jpg';
 import blogImage2 from '../images/Tanques1.jpg';
 import blogImage3 from '../images/Ambientes2.jpg';

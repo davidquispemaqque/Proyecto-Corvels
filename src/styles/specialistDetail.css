@@ -1,7 +1,40 @@
 /* src/styles/specialistDetail.css */
+
+.specialist-detail-background {
+  position: relative;
+  z-index: 1; /* Asegúrate de que el contenido esté por encima del fondo animado */
+}
+
+.specialist-detail-background::before, .specialist-detail-background::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(75, 114, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(75, 114, 255, 0.2) 50%, rgba(75, 114, 255, 0.2) 75%, transparent 75%, transparent);
+  animation: moveBackground 25s linear infinite;
+}
+
+.specialist-detail-background::after {
+  background: linear-gradient(45deg, rgba(255, 188, 0, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 188, 0, 0.2) 50%, rgba(255, 188, 0, 0.2) 75%, transparent 75%, transparent);
+  animation-direction: reverse;
+}
+
+@keyframes moveBackground {
+  from {
+    transform: translateX(0) translateY(0);
+  }
+  to {
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
 .specialist-detail {
   margin-top: 200px;
   text-align: left;
+  position: relative;
+  z-index: 1; /* Asegúrate de que el contenido esté por encima del fondo animado */
 }
 
 .text-section {
@@ -31,10 +64,10 @@
 
 .specialist-image {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 80%;
-  height: 80%;
+  top: 30px;
+  left: 35px;
+  width: 90%;
+  height: 90%;
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -51,6 +84,29 @@ ul li {
 h3 {
   margin-top: 20px;
   color: #4b72ff;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-icon-email {
+  font-size: 2rem; /* Aumenta el tamaño del ícono */
+  margin-right: 15px;
+  color: #4b72ff; /* Color para el ícono de correo */
+}
+
+.contact-icon-phone {
+  font-size: 2rem; /* Aumenta el tamaño del ícono */
+  margin-right: 15px;
+  color: #ffbc00; /* Color para el ícono de teléfono */
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 1.2rem; /* Ajusta el tamaño del texto */
 }
 
 .button-container {

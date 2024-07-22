@@ -6,15 +6,30 @@ import Header from '../components/Header'; // Importa el componente Header
 import '../styles/specialists.css'; // Asegúrate de importar el CSS
 
 // Importa las imágenes
-import personaImg from '../images/persona.jpg';
-import mujerImg from '../images/mujer.jpg';
+import personaImg from '../images/team/persona.jpg';
+import saraiImg from '../images/team/sarai.jpg';
+
+import cleydiImg from '../images/team/Cleydi.jpg';
+
+import elizImg from '../images/team/eliz.jpg';
+import camilaImg from '../images/team/camila.jpg';
+
+import ximenaImg from '../images/team/ximena.jpg';
+
 import headerImage from '../images/grupo.jpg'; // Nueva imagen para el encabezado
 
 const Specialists = () => {
   // Mapea las imágenes a los identificadores
   const imageMap = {
     'persona.jpg': personaImg,
-    'mujer.jpg': mujerImg,
+    'sarai.jpg': saraiImg,
+
+    'Cleydi.jpg': cleydiImg,
+
+    'eliz.jpg': elizImg,
+    'camila.jpg': camilaImg,
+
+    'ximena.jpg': ximenaImg,
   };
 
   return (
