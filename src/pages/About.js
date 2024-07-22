@@ -10,12 +10,18 @@ import headeImage2 from '../images/headeImage2.jpeg';
 import headeImage3 from '../images/headeImage3.jpeg';
 import headeImage4 from '../images/headeImage4.jpeg';
 import headeImage5 from '../images/headeImage5.jpeg';
+// import headeImage6 from '../images/Ambientes1.jpg';
+// import headeImage7 from '../images/Ambientes2.jpg';
+
 // Asegúrate de que las miniaturas existan en la carpeta correcta
 import thumb1 from '../images/headeImage1.jpeg'; // O usa las mismas imágenes si no tienes miniaturas
 import thumb2 from '../images/headeImage2.jpeg';
 import thumb3 from '../images/headeImage3.jpeg';
 import thumb4 from '../images/headeImage4.jpeg';
 import thumb5 from '../images/headeImage5.jpeg';
+// import thumb6 from '../images/headeImage6.jpg';
+// import thumb7 from '../images/headeImage7.jpg';
+
 import Header from '../components/Header';
 import '../styles/about.css';
 
@@ -50,19 +56,29 @@ const About = () => {
             </Col>
             <Col md={4} className="d-flex justify-content-center align-items-center">
               <motion.div initial="hidden" animate="visible" variants={fadeInUp}>
-                <Image src={quienesSomosImg} className="small-image rounded-shadow" fluid />
+                <Image src={quienesSomosImg} className="small-somos" fluid />
               </motion.div>
             </Col>
           </Row>
         </section>
 
         <section className="my-5 mission-vision-section">
-          <Row>
-            <Col className="text-center">
-              <Image src={missionVisionImg} className="full-width-image" fluid />
-            </Col>
-          </Row>
-        </section>
+      <Row>
+        <Col md={4} className="text-center">
+          <Image src={missionVisionImg} className="full-width-image" fluid />
+        </Col>
+        <Col md={8}>
+          <h2 className="mission-title">Misión</h2>
+          <p className="mission-text">
+            Ser una empresa dedicada al asesoramiento, venta, saneamiento ambiental y limpieza, con el propósito de brindar satisfacción al cliente antes, durante y después de la ejecución de nuestros servicios. Nos caracterizamos por trabajar con los mejores estándares de calidad física, ambiental y laboral dentro de los plazos establecidos y comprometidos por formar sólidas y duraderas relaciones con nuestros clientes y socios.
+          </p>
+          <h2 className="vision-title">Visión</h2>
+          <p className="vision-text">
+            Ser un referente en el rubro de servicios y ventas, estando posicionados como una de las mejores empresas del rubro a nivel local y con proyecciones a nivel nacional. Asimismo, lograr la plena satisfacción de nuestro equipo de colaboradores y clientes, fomentando el trabajo en equipo, diversificación del servicio y compromiso para la creación de valor social.
+          </p>
+        </Col>
+      </Row>
+    </section>
 
         <section className="my-5">
         <h2 className="section-trabajo">NUESTRO TRABAJO</h2>
@@ -84,6 +100,13 @@ const About = () => {
                 <Carousel.Item>
                   <Image src={headeImage5} className="d-block w-100" fluid />
                 </Carousel.Item>
+                {/* <Carousel.Item>
+                  <Image src={headeImage6} className="d-block w-100" fluid />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <Image src={headeImage7} className="d-block w-100" fluid />
+                </Carousel.Item> */}
+                
               </Carousel>
               <div className="thumbnail-container">
                 <Image src={thumb1} className="thumbnail" onClick={() => handleSelect(0)} />
@@ -91,6 +114,8 @@ const About = () => {
                 <Image src={thumb3} className="thumbnail" onClick={() => handleSelect(2)} />
                 <Image src={thumb4} className="thumbnail" onClick={() => handleSelect(3)} />
                 <Image src={thumb5} className="thumbnail" onClick={() => handleSelect(4)} />
+                {/* <Image src={thumb6} className="thumbnail" onClick={() => handleSelect(5)} />
+                <Image src={thumb7} className="thumbnail" onClick={() => handleSelect(6)} /> */}
               </div>
             </Col>
           </Row>

@@ -1,40 +1,46 @@
 import featuredImage from '../images/inicio1.jpg';
-import newImage1 from '../images/mision.jpg';
-import newImage2 from '../images/vision.jpg';
-import newImage3 from '../images/paisaje.jpg';
-import newImage4 from '../images/plaga.jpg';
-import newImage5 from '../images/plaga.jpg';
-import newImage6 from '../images/plaga.jpg';
-import newImage7 from '../images/corvel.jpg';
-import newImage8 from '../images/ambiente.jpg';
+import blogImage1 from '../images/Ambientes1.jpg';
+import blogImage2 from '../images/Tanques1.jpg';
+import blogImage3 from '../images/Ambientes2.jpg';
+
+import blogImage4 from '../images/Ambientes3.jpg';
+import blogImage5 from '../images/Ambientes4.jpg';
+import blogImage6 from '../images/Ambientes5.jpg';
+
+import blogImage7 from '../images/Desinsectación1.jpg';
+import blogImage8 from '../images/Desinsectación2.jpg';
+import blogImage9 from '../images/Desinsectación3.jpg';
+
+import blogImage10 from '../images/charla1.jpg';
+import blogImage11 from '../images/charla2.jpg';
+
 
 const blogPostsData = [
   {
     id: 1,
-    title: 'Post Destacado 1',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!',
-    images: [featuredImage, newImage1, newImage2],
+    title: 'Importancia del Saneamiento Ambiental',
+    text: 'El saneamiento ambiental es esencial para mantener un entorno saludable y seguro. En CORVEL\'S S.R.L., ofrecemos soluciones integrales que incluyen desinfección, desinsectación y desratización para asegurar un ambiente limpio y libre de plagas.',
+    images: [blogImage1, blogImage2, blogImage3],
   },
   {
     id: 2,
-    title: 'Post Destacado 2',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!',
-    images: [newImage3, newImage4, newImage5],
+    title: 'Tecnologías Innovadoras en Control de Plagas',
+    text: 'Utilizamos las tecnologías más avanzadas para el control de plagas, garantizando una eliminación efectiva y segura. Descubre cómo nuestras técnicas de última generación pueden proteger tu hogar o negocio.',
+    images: [blogImage4 , blogImage5, blogImage6],
   },
   {
     id: 3,
-    title: 'Post Destacado 3',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!',
-    images: [newImage6, newImage7, newImage8],
-    
+    title: 'Beneficios de la Limpieza de Tanques de Agua',
+    text: 'La limpieza y desinfección de tanques de agua es crucial para prevenir enfermedades y asegurar el suministro de agua potable. En este post, explicamos nuestro proceso y los beneficios que ofrece.',
+    images: [blogImage7, blogImage8, blogImage9],
   },
   {
-    id: 3,
-    title: 'Post Destacado 4',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!',
-    images: [newImage6, newImage7, newImage8],
-    
+    id: 4,
+    title: 'Soluciones Personalizadas para Cada Sector',
+    text: 'En CORVEL\'S S.R.L., entendemos que cada sector tiene necesidades específicas. Ofrecemos soluciones personalizadas para la minería, la industria alimentaria, la construcción, y muchos más.',
+    images: [blogImage10, blogImage11],
   },
 ];
+
 
 export default blogPostsData;
