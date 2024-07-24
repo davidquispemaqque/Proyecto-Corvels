@@ -8,7 +8,12 @@ import inicio3 from '../images/inicio3.webp';
 import logo from '../images/logo.png';
 import services from '../data/services'; // Importa los servicios desde el archivo services.js
 import gifImage from '../images/beneficios.gif';
-import VideoCarousel from '../components/VideoCarousel'; // Asegúrate de que la ruta es correcta
+import VideoCarousel from '../components/VideoCarousel'; 
+import logoRecolsa from '../images/iberica.png';
+import logoAnotherCompany from '../images/recolsa.png';
+import logoPrescott from '../images/presto.png';
+import logoBodegaNajar from '../images/hombre.png';
+import logobode from '../images/najar.png';// Asegúrate de que la ruta es correcta
 
 
 function Home() {
@@ -177,6 +182,28 @@ function Home() {
               </Col>
             </Row>
           </Container>
+        </section>
+
+        <section className="my-5">
+          <h2 className="text-center">Ellos confían en nuestro servicio</h2>
+          <Row className="d-flex justify-content-center align-items-center">
+            <Col xs={6} sm={4} md={2} className="mb-3">
+              <Image src={logoRecolsa} fluid />
+            </Col>
+            <Col xs={6} sm={4} md={2} className="mb-3">
+              <Image src={logoAnotherCompany} fluid />
+            </Col>
+            <Col xs={6} sm={4} md={2} className="mb-3">
+              <Image src={logoPrescott} fluid />
+            </Col>
+            <Col xs={6} sm={4} md={2} className="mb-3">
+              <Image src={logoBodegaNajar} fluid />
+            </Col>
+
+            <Col xs={6} sm={4} md={2} className="mb-3">
+              <Image src={logobode} fluid />
+            </Col>
+          </Row>
         </section>
         
       </Container>
