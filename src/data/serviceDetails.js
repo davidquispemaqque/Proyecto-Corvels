@@ -4,12 +4,26 @@ import desratizacionImg2 from '../images/desratizacion2.jpg';
 import desratizacionImg3 from '../images/desratizacion3.jpg';
 import desratizacionImg4 from '../images/desratizacion4.jpg';
 import desratizacionImg5 from '../images/desratizacion5.jpg';
+import desratizacionImg6 from '../images/desratizacion6.jpg';
+import desratizacionImg7 from '../images/desratizacion7.jpg';
+import desratizacionImg8 from '../images/desratizacion8.jpg';
+import desratizacionImg9 from '../images/desratizacion9.jpg';
+import desratizacionImg10 from '../images/desratizacion10.jpg';
+import desratizacionImg11 from '../images/desratizacion11.jpg';
+import desratizacionImg12 from '../images/desratizacion12.jpg';
+import desratizacionImg13 from '../images/desratizacion13.jpg';
+import desratizacionImg14 from '../images/desratizacion14.jpg';
 
 // desinfecion
 import desinfeccionImg1 from '../images/Desinfección1.jpg';
 import desinfeccionImg2 from '../images/Desinfección2.jpg';
 import desinfeccionImg3 from '../images/Desinfección3.jpg';
 import desinfeccionImg4 from '../images/Desinfección4.jpg';
+import desinfeccionImg5 from '../images/Desinfección5.jpg';
+import desinfeccionImg6 from '../images/Desinfección6.jpg';
+import desinfeccionImg7 from '../images/Desinfección7.jpg';
+import desinfeccionImg8 from '../images/Desinfección8.jpg';
+import desinfeccionImg9 from '../images/Desinfección9.jpg';
 
 // Desinsectación
 import DesinsectacionImg1 from '../images/Desinsectación1.jpg';
@@ -18,11 +32,17 @@ import DesinsectacionImg3 from '../images/Desinsectación3.jpg';
 import DesinsectacionImg4 from '../images/Desinsectación4.jpg';
 import DesinsectacionImg5 from '../images/Desinsectación5.jpg';
 
+
 // Trampas de Luz
 import TrampasImg1 from '../images/Trampas1.jpg';
 import TrampasImg2 from '../images/Trampas2.jpg';
 import TrampasImg3 from '../images/Trampas3.jpg';
 import TrampasImg4 from '../images/Trampas4.jpg';
+import TrampasImg5 from '../images/Trampas5.jpg';
+import TrampasImg6 from '../images/Trampas6.jpg';
+import TrampasImg7 from '../images/Trampas7.jpg';
+import TrampasImg8 from '../images/Trampas8.jpg';
+
 
 // Limpieza de tanques
 import TanquesImg1 from '../images/Tanques1.jpg';
@@ -51,7 +71,7 @@ const serviceDetails = [
   {
     id: 1,
     title: 'Desratización',
-    images: [desratizacionImg1, desratizacionImg2, desratizacionImg3, desratizacionImg4, desratizacionImg5],
+    images: [desratizacionImg1, desratizacionImg2, desratizacionImg3, desratizacionImg4, desratizacionImg5, desratizacionImg6, desratizacionImg7, desratizacionImg8, desratizacionImg9, desratizacionImg10, desratizacionImg11, desratizacionImg12, desratizacionImg13, desratizacionImg14],
     description: 'La desratización es un proceso crucial para el control de roedores en diferentes entornos, asegurando un ambiente limpio y seguro.',
     points: [
       'Selección del sitio.',
@@ -80,7 +100,7 @@ const serviceDetails = [
   {
     id: 2,
     title: 'Desinfección',
-    images: [desinfeccionImg1, desinfeccionImg2, desinfeccionImg3, desinfeccionImg4],
+    images: [desinfeccionImg1, desinfeccionImg2, desinfeccionImg3, desinfeccionImg4,  desinfeccionImg5,  desinfeccionImg6],
     description: 'La desinfección elimina los microorganismos patógenos presentes en superficies y ambientes, reduciendo el riesgo de infecciones.',
     points: [
       'Preparación del equipo.',
@@ -132,7 +152,7 @@ const serviceDetails = [
   {
     id: 4,
     title: 'Trampas de Luz e Insectocutores',
-    images: [TrampasImg1, TrampasImg2, TrampasImg3, TrampasImg4],
+    images: [TrampasImg1, TrampasImg2, TrampasImg3, TrampasImg4, TrampasImg5, TrampasImg6, TrampasImg7, TrampasImg8],
     description: 'El mantenimiento de trampas de luz e insectocutores es esencial para la captura y control de insectos voladores.',
     points: [
       'Colocación de la escalera.',

@@ -5,22 +5,19 @@ import { motion } from 'framer-motion';
 import sobreNosotrosImg from '../images/sobre_nosotros.jpg';
 import quienesSomosImg from '../images/quienes_somos.jpg';
 import missionVisionImg from '../images/mission-vision.png';
-import headeImage1 from '../images/headeImage1.jpeg';
-import headeImage2 from '../images/headeImage2.jpeg';
-import headeImage3 from '../images/headeImage3.jpeg';
-import headeImage4 from '../images/headeImage4.jpeg';
-import headeImage5 from '../images/headeImage5.jpeg';
-// import headeImage6 from '../images/Ambientes1.jpg';
-// import headeImage7 from '../images/Ambientes2.jpg';
+import headeImage1 from '../images/about/headeImage1.jpeg';
+import headeImage2 from '../images/about/headeImage2.jpeg';
+import headeImage3 from '../images/about/headeImage3.jpeg';
+import headeImage4 from '../images/about/headeImage4.jpeg';
+
 
 // Asegúrate de que las miniaturas existan en la carpeta correcta
-import thumb1 from '../images/headeImage1.jpeg'; // O usa las mismas imágenes si no tienes miniaturas
-import thumb2 from '../images/headeImage2.jpeg';
-import thumb3 from '../images/headeImage3.jpeg';
-import thumb4 from '../images/headeImage4.jpeg';
-import thumb5 from '../images/headeImage5.jpeg';
-// import thumb6 from '../images/headeImage6.jpg';
-// import thumb7 from '../images/headeImage7.jpg';
+import thumb1 from '../images/about/headeImage1.jpeg'; // O usa las mismas imágenes si no tienes miniaturas
+import thumb2 from '../images/about/headeImage2.jpeg';
+import thumb3 from '../images/about/headeImage3.jpeg';
+import thumb4 from '../images/about/headeImage4.jpeg';
+
+
 
 import Header from '../components/Header';
 import '../styles/about.css';
@@ -97,25 +94,15 @@ const About = () => {
                 <Carousel.Item>
                   <Image src={headeImage4} className="d-block w-100" fluid />
                 </Carousel.Item>
-                <Carousel.Item>
-                  <Image src={headeImage5} className="d-block w-100" fluid />
-                </Carousel.Item>
-                {/* <Carousel.Item>
-                  <Image src={headeImage6} className="d-block w-100" fluid />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <Image src={headeImage7} className="d-block w-100" fluid />
-                </Carousel.Item> */}
-                
+               
+                 
               </Carousel>
               <div className="thumbnail-container">
                 <Image src={thumb1} className="thumbnail" onClick={() => handleSelect(0)} />
                 <Image src={thumb2} className="thumbnail" onClick={() => handleSelect(1)} />
                 <Image src={thumb3} className="thumbnail" onClick={() => handleSelect(2)} />
                 <Image src={thumb4} className="thumbnail" onClick={() => handleSelect(3)} />
-                <Image src={thumb5} className="thumbnail" onClick={() => handleSelect(4)} />
-                {/* <Image src={thumb6} className="thumbnail" onClick={() => handleSelect(5)} />
-                <Image src={thumb7} className="thumbnail" onClick={() => handleSelect(6)} /> */}
+                
               </div>
             </Col>
           </Row>
