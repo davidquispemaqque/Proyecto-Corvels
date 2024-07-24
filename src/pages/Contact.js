@@ -1,7 +1,7 @@
 // src/pages/Contact.js
 import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
-import contactImage from '../images/imagen.png';
+import contactImage from '../images/contacto.jpg';
 import smallImage from '../images/corvel.jpg';
 import Header from '../components/Header'; // Importa el componente Header
 import '../styles/contact.css';

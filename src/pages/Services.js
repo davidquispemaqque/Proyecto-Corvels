@@ -3,7 +3,7 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import services from '../data/services';
 import Header from '../components/Header'; // Importa el componente Header
-import headerImage from '../images/plaga.jpg'; // Nueva imagen para el encabezado
+import headerImage from '../images/servicios.jpg'; // Nueva imagen para el encabezado
 import '../styles/services.css';
 
 // Componente de Servicios

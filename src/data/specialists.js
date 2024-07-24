@@ -113,13 +113,13 @@ const specialists = [
   {
     "id": 11,
     "name": "Juan",
-    "role": "Desarrolladora Backend",
-    "image": "persona.jpg",
-    "bio": "Mi nombre es Sarai Choqquepata Tapia, especialista en Diseño y Desarrollo de Software, con conocimientos en desarrollo web, gestión de proyectos y programación. Busco oportunidades para adquirir experiencia práctica en el desarrollo de software y aplicaciones innovadoras. Me apasiona trabajar en equipo y participar en proyectos tecnológicos, valorando la comunicación y cooperación para lograr objetivos comunes. Siempre estoy dispuesto a aportar ideas y aprender de los demás",
-    "phone": "+51 920 871 944",
-    "email": "saraichoquepata12@gmail.com",
-    "skills": ["Responsable", "Puntual", "Comunicación efectiva", "Empatía", "Proactividad"],
-    "experience": [""]
+    "role": "Gestión y mantenimiento de maquinaria industrial",
+    "image": "eduardo.jpg",
+    "bio": "Mi nombre es Eduardo Felipe Cornejo Gómez, especialista en gestión y mantenimiento de maquinarias industriales, con conocimiento en la elaboración de planes de mantenimiento efectivos para asegurar el óptimo funcionamiento de los equipos.",
+    "phone": "+51 960 824 046",
+    "email": "educg.7ut@gmail.com",
+    "skills": ["Revisión y anticipación de problemas potenciales, diseñando estrategias efectivas de mantenimiento.", "Mantenimiento de un espacio de trabajo ordenado para aumentar la eficiencia.", "Colaboración activa en equipos, valorando las ideas de mis compañeros.", "Gestión responsable del tiempo y actuación con integridad y transparencia en todas mis acciones."],
+    "experience": ["Gestión y mantenimiento de maquinarias textiles.", "Aplicación de conocimientos teóricos y prácticos para asegurar el funcionamiento óptimo de equipos clave."]
   }
 ];
 

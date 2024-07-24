@@ -4,7 +4,7 @@ import { Container, Row, Col, Card, Carousel } from 'react-bootstrap';
 import RealTimeNews from '../components/RealTimeNews';
 import Header from '../components/Header'; // Importa el componente Header
 import '../styles/blog.css';
-import headerImage from '../images/paisaje.jpg'; // Nueva imagen para el encabezado
+import headerImage from '../images/blog.jpg'; // Nueva imagen para el encabezado
 import blogPostsData from '../data/blogPostsData'; // Importa los datos del blog
 
 const Blog = () => {

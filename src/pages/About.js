@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Image, Carousel } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-import sobreNosotrosImg from '../images/sobre_nosotros.jpg';
+import sobreNosotrosImg from '../images/nosotros.jpg';
 import quienesSomosImg from '../images/quienes_somos.jpg';
 import missionVisionImg from '../images/mission-vision.png';
 import headeImage1 from '../images/headeImage1.jpeg';

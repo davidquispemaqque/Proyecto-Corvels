@@ -14,10 +14,10 @@ import cleydiImg from '../images/team/Cleydi.jpg';
 import jeffersonImg from '../images/team/jefferson.jpg';
 import elizImg from '../images/team/eliz.jpg';
 import alejandroImg from '../images/team/alejandro.jpg';
-
 import ximenaImg from '../images/team/ximena.jpg';
 import luzImg from '../images/team/luz.jpg';
 import tamaraImg from '../images/team/tamara.jpg';
+import eduardoImg from '../images/team/eduardo.jpg';
 
 // Mapea las imágenes a los identificadores
 const imageMap = {
@@ -28,10 +28,10 @@ const imageMap = {
   'jefferson.jpg': jeffersonImg,
   'eliz.jpg': elizImg,
   'camila.jpg': camilaImg,
-
   'ximena.jpg': ximenaImg,
   'luz.jpg': luzImg,
   'tamara.jpg': tamaraImg,
+  'eduardo.jpg': eduardoImg,
 };
 
 const SpecialistDetail = () => {

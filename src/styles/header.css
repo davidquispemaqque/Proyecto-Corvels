@@ -7,7 +7,7 @@
   margin-bottom: 60px;
   height: 350px; /* Ajusta la altura según tus necesidades */
   background-size: cover;
-  background-position: center;
+  background-position: center 35%;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -19,7 +19,7 @@ const ServiceDetail = () => {
 
   return (
     <Container fluid className="service-detail-container">
-      <Header title={`Servicios de ${service.title}`} image={service.images[0]} /> {/* Usa el componente Header */}
+      <Header title={`Servicios de ${service.title}`} image={service.headerImage} /> {/* Usa la imagen de headerImage */}
 
       <Container className="mt-5 service-content">
         <Row>
@@ -66,7 +66,7 @@ const ServiceDetail = () => {
               className="mb-3 btn-consult"
               onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`, '_blank')}
             >
-              Informacion sobre este servicio
+              Información sobre este servicio
             </Button>
           </Col>
           <Col md={3} className="service-buttons-col">
