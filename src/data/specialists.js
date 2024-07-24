@@ -5,33 +5,33 @@ const specialists = [
     "name": "David Quispe",
     "role": "Diseñador y Desarrollador de páginas web",
     "image": "persona.jpg",
-    "bio": "Soy un especialista en desarrollo web con amplios conocimientos en tecnologías modernas como React, Node.js y Python. Tengo una fuerte capacidad para liderar proyectos y gestionar equipos, apoyado por mi formación en gestión de proyectos. Mi objetivo es crear soluciones innovadoras y eficientes que satisfagan las necesidades del cliente.",
+    "bio": "Mi nombre es Quispe Maqque David, especialista en diseño y desarrollo de paginas web con amplios conocimientos en tecnologías modernas como React, Node.js y Python. Tengo una fuerte capacidad para liderar proyectos y gestionar equipos, apoyado por mi formación en gestión de proyectos. Mi objetivo es crear soluciones innovadoras y eficientes que satisfagan las necesidades del cliente.",
     "phone": "+51 987 654 321",
     "email": "david.quispe.m@tecsup.edu.pe",
     "skills": ["JavaScript", "React", "Node.js", "Python", "Liderazgo", "Gestión de proyectos"],
-    "experience": "Proyectos realizados: [describe tus proyectos aquí]"
+    "experience":[""]
   },
   {
     "id": 2,
     "name": "Sarai Tapia",
-    "role": "Desarrolladora Backend",
+    "role": "Diseñadora y Desarrolladora de páginas web",
     "image": "sarai.jpg",
     "bio": "Mi nombre es Sarai Choqquepata Tapia, especialista en Diseño y Desarrollo de Software, con conocimientos en desarrollo web, gestión de proyectos y programación. Busco oportunidades para adquirir experiencia práctica en el desarrollo de software y aplicaciones innovadoras. Me apasiona trabajar en equipo y participar en proyectos tecnológicos, valorando la comunicación y cooperación para lograr objetivos comunes.",
     "phone": "+51 920 871 944",
     "email": "saraichoquepata12@gmail.com",
     "skills": ["Responsable", "Puntual", "Comunicación efectiva", "Empatía", "Proactividad"],
-    "experience": "Participé en una Hackathon de Innovación Social organizada por el BCP, desarrollando soluciones tecnológicas para problemas sociales. También he creado páginas web y sitios de comercio electrónico, optimizando la experiencia del usuario."
+    "experience": ["Participé en una Hackathon de Innovación Social organizada por el BCP", "Desarrollando soluciones tecnológicas para problemas sociales.", "He creado páginas web y sitios de comercio electrónico", "Optimizando la experiencia del usuario."]
   },
   {
     "id": 3,
-    "name": "Juan",
-    "role": "Desarrolladora Backend",
-    "image": "persona.jpg",
-    "bio": "Mi nombre es Sarai Choqquepata Tapia, especialista en Diseño y Desarrollo de Software, con conocimientos en desarrollo web, gestión de proyectos y programación. Busco oportunidades para adquirir experiencia práctica en el desarrollo de software y aplicaciones innovadoras. Me apasiona trabajar en equipo y participar en proyectos tecnológicos, valorando la comunicación y cooperación para lograr objetivos comunes. Siempre estoy dispuesto a aportar ideas y aprender de los demás",
-    "phone": "+51 920 871 944",
-    "email": "saraichoquepata12@gmail.com",
-    "skills": ["Responsable", "Puntual", "Comunicación efectiva", "Empatía", "Proactividad"],
-    "experience": "Proyectos realizados: [describe tus proyectos aquí]"
+    "name": "Camila Paola Romero",
+    "role": "Gestión de Seguridad y Salud en el Trabajo",
+    "image": "camila.jpg",
+    "bio": "Mi nombre es Camila Paola Romero Arenas, especialista en Gestión de Seguridad y Salud en el Trabajo con conocimientos en identificación, evaluación y control de riesgos laborales. Mi enfoque está orientado hacia la creación de entornos laborales seguros y saludables, promoviendo una cultura de prevención y bienestar en las organizaciones. Tengo la capacidad de realizar diferentes documentos relacionados con la SST.",
+    "phone": "+51 953 062 869",
+    "email": "camila2106romare@gmail.com",
+    "skills": ["Adaptabilidad", "Destreza", "Trabajo en equipo", "Responsabilidad", "Solución de problemas", "Comunicación asertiva"],
+    "experience": ["Desarrollo de documentos de seguridad y salud ocupacional para pequeñas y medianas empresas", "Proyecto para calidad: Propuesta de implementación de un sistema de gestión de calidad en la empresa Corporación A&D."]
   },
   {
     "id": 4,
@@ -42,18 +42,18 @@ const specialists = [
     "phone": "+51 944 739 201",
     "email": "cleydinatalymamanicondori@gmail.com",
     "skills": ["Solución de problemas", "Comunicación efectiva", "Adaptabilidad"],
-    "experience": "Proyectos realizados: Documentos IPERC, Diagnóstico de las 5S y Monitoreo Ocupacional."
+    "experience": ["Documentos IPERC", "Diagnóstico de las 5S", "Monitoreo Ocupacional."]
   },
   {
     "id": 5,
-    "name": "Juan",
-    "role": "Desarrolladora Backend",
-    "image": "persona.jpg",
-    "bio": "Mi nombre es Sarai Choqquepata Tapia, especialista en Diseño y Desarrollo de Software, con conocimientos en desarrollo web, gestión de proyectos y programación. Busco oportunidades para adquirir experiencia práctica en el desarrollo de software y aplicaciones innovadoras. Me apasiona trabajar en equipo y participar en proyectos tecnológicos, valorando la comunicación y cooperación para lograr objetivos comunes. Siempre estoy dispuesto a aportar ideas y aprender de los demás",
-    "phone": "+51 920 871 944",
-    "email": "saraichoquepata12@gmail.com",
-    "skills": ["Responsable", "Puntual", "Comunicación efectiva", "Empatía", "Proactividad"],
-    "experience": "Proyectos realizados: [describe tus proyectos aquí]"
+    "name": "Jefferson Alexander Callpa",
+    "role": "Gestion de Seguridad y Salud en el Trabajo",
+    "image": "jefferson.jpg",
+    "bio": "Mi nombre es Jefferson Alexander Callpa Bustamante, especialista es Gestion de Seguridad y Salud en el Trabajo en la empresa CORVEL'S S.R.L. Tengo los conocimientos para identificar y controlar los peligros y riesgos, tuve la oportunidad de desarrollar documentos para auditoria tri-norma para saneamiento ambiental, específicamente lo que el calidad (ISO 9001:2015).",
+    "phone": "+51 941255286",
+    "email": "acallpab@gmail.com ",
+    "skills": ["Responsable", "Adaptabilidad", "Asertividad", "Respeto ", "Comunicacion Afectiva"],
+    "experience": [" Realizacion de IPERC", "Diagnóstico de las 5S", "Documentacion para implementacion de ISO 9001."]
   },
   {
     "id": 6,
@@ -64,21 +64,54 @@ const specialists = [
     "phone": "+51 947 527 699",
     "email": "yulianarojasgutierrez50@gmail.com",
     "skills": ["Gestión de riesgos: Identificación y control de riesgos laborales.", "Elaboración de documentos de SST: Creación de procedimientos y manuales de seguridad.", "Capacitación y formación: Diseño e implementación de programas de formación en seguridad y salud.", "Auditorías y evaluaciones: Realización de auditorías internas de SST.", "Implementación de sistemas de gestión: Desarrollo de sistemas de gestión de SST.", "AutoCAD: Creación de mapas de áreas y diseños técnicos.", "Investigación de incidentes: Análisis de causas de accidentes laborales.", "Comunicación efectiva: Transmisión clara de políticas y procedimientos de SST.", "Trabajo en equipo: Colaboración con equipos multidisciplinarios."],
-    "experience": "Proyectos realizados: Procedimientos de Trabajo Seguro (PTS), Mapas de procesos y Mapas de áreas identificadas (LAYOUT) utilizando AutoCAD."
+    "experience": ["Procedimientos de Trabajo Seguro (PTS)", "Mapas de procesos", "Mapas de áreas identificadas (LAYOUT) utilizando AutoCAD."]
   },
   {
     "id": 7,
-    "name": "Camila Paola Romero",
+    "name": "Alejandro Saul Cueva",
     "role": "Gestión de Seguridad y Salud en el Trabajo",
-    "image": "camila.jpg",
-    "bio": "Mi nombre es Camila Paola Romero Arenas, especialista en Gestión de Seguridad y Salud en el Trabajo con conocimientos en identificación, evaluación y control de riesgos laborales. Mi enfoque está orientado hacia la creación de entornos laborales seguros y saludables, promoviendo una cultura de prevención y bienestar en las organizaciones. Tengo la capacidad de realizar diferentes documentos relacionados con la SST.",
-    "phone": "+51 953 062 869",
-    "email": "camila2106romare@gmail.com",
-    "skills": ["Adaptabilidad", "Destreza", "Trabajo en equipo", "Responsabilidad", "Solución de problemas", "Comunicación asertiva"],
-    "experience": "Proyectos realizados: Desarrollo de documentos de seguridad y salud ocupacional para pequeñas y medianas empresas y Proyecto para calidad de Propuesta de implementación de un sistema de gestión de calidad en la empresa Corporación A&D."
+    "image": "alejandro.jpg",
+    "bio": "Mi nombre es Alejandro Saul Cueva Calcino, especialista en Gestión de Seguridad y Salud en el Trabajo con conocimientos empíricos en identificación de peligros y evaluación de riesgos laborales. Con la capacidad de garantizar ambientes de trabajo seguros, asegurando la integridad física y mental de los colaboradores. Destaco principalmente en la solución de problemas de una manera rápida y eficaz.",
+    "phone": "+51 949 206 109",
+    "email": ": alejandrocalcino12@gmail.com",
+    "skills": ["Capacidad de respuesta rápida y efectiva", "Resolución de conflictos", "Creatividad y pensamiento crítico", "Trabajo en equipo", "Comunicación asertiva", "Adaptabilidad y manejo de tareas múltiples"],
+    "experience": [" Implementación de propuestas de mejora continua", "Auditor de Sistemas de Gestión Ambiental", "Diagnosticador de las 5S"]
   },
   {
     "id": 8,
+    "name": "Ximena Pineda",
+    "role": "Seguridad y Salud Ocupacional",
+    "image": "ximena.jpg",
+    "bio": "Mi nombre es Ximena Pineda Huaracha, especialista en seguridad y salud ocupacional, con experiencia en implementación de 5'S, capacitación y elaboración de dashboards",
+    "phone": "+51 974 588 596",
+    "email": "ximenapineda08.09@gmail.com",
+    "skills": ["Implementación de 5'S", "Elaboración de dashboards", "Liderazgo, Proactividad"],
+    "experience": ["Capacitaciones", "Elaboración de informes", "Investigación de accidentes e incidentes"]
+  },
+  {
+    "id": 9,
+    "name": "Luz Eliana Aquino",
+    "role": "Gestion de Seguridad y Salud en el Trabajo",
+    "image": "luz.jpg",
+    "bio": "Mi nombre es Luz Eliana Aquino Chura especialista en 5S y especialista en seguridad y salud en el trabajo, me considero una persona apasionada con mi trabajo, manejando primordialmente la responsabilidad, me gusta trabajar con entusiasmo, excelente habilidad en comunicación y liderazgo, acciones de mejora laboral, resolución de problemas y mejora continua.",
+    "phone": "+51 989 978 225",
+    "email": "luzaquinochura11 @gmail.com",
+    "skills": ["Comunicación eficaz", "Trabajo en equipo", "Liderazgo, Apoyo mutuo"],
+    "experience": ["Diagnóstico de 5S", "Implementación de sistemas de gestión", "Herramientas de gestión"]
+  },
+  {
+    "id": 10,
+    "name": "Tamara Franshesca Valencia ",
+    "role": "Gestion de Seguridad y Salud en el Trabajo",
+    "image": "tamara.jpg",
+    "bio": "Mi nombre es Tamara Franshesca Valencia Vera especialista en 5S y especialista en seguridad y salud en el trabajo, me considero una persona responsable, dinámica, de rápido aprendizaje, creativa, con puntualidad y capacidad para resolver problemas eficientemente, me gustan los retos y metas que la organización me pudiera plantear; con un buen manejo de relaciones interpersonales, facilidad para trabajar en equipo, en condiciones de alta presión, y lograr las metas trazadas por la empresa y mi grupo de trabajo.",
+    "phone": "+51 922 179 132",
+    "email": "Chescav24@gmail.com",
+    "skills": ["Comunicación eficaz", "Trabajo en equipo", "Liderazgo", "Creativa", "Responsable"],
+    "experience": ["Diagnóstico de 5S", "Identificación de peligros y riesgos", "Implementación de sistemas de gestión", "Herramientas de gestión y trabajos de alto riesgo"]
+  },
+  {
+    "id": 11,
     "name": "Juan",
     "role": "Desarrolladora Backend",
     "image": "persona.jpg",
@@ -86,18 +119,7 @@ const specialists = [
     "phone": "+51 920 871 944",
     "email": "saraichoquepata12@gmail.com",
     "skills": ["Responsable", "Puntual", "Comunicación efectiva", "Empatía", "Proactividad"],
-    "experience": "Proyectos realizados: [describe tus proyectos aquí]"
-  },
-  {
-    "id": 9,
-    "name": "Ximena Pineda",
-    "role": "Desarrolladora Backend",
-    "image": "ximena.jpg",
-    "bio": "Mi nombre es Ximena Pineda Huaracha, especialista en seguridad y salud ocupacional, con experiencia en implementación de 5'S, capacitación y elaboración de dashboards",
-    "phone": "",
-    "email": "",
-    "skills": [""],
-    "experience": "Proyectos realizados: "
+    "experience": [""]
   }
 ];
 

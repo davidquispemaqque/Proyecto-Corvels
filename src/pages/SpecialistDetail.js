@@ -9,25 +9,29 @@ import '../styles/specialistDetail.css';
 // Importa las imágenes
 import personaImg from '../images/team/persona.jpg';
 import saraiImg from '../images/team/sarai.jpg';
-
-import cleydiImg from '../images/team/Cleydi.jpg';
-
-import elizImg from '../images/team/eliz.jpg';
 import camilaImg from '../images/team/camila.jpg';
+import cleydiImg from '../images/team/Cleydi.jpg';
+import jeffersonImg from '../images/team/jefferson.jpg';
+import elizImg from '../images/team/eliz.jpg';
+import alejandroImg from '../images/team/alejandro.jpg';
 
 import ximenaImg from '../images/team/ximena.jpg';
+import luzImg from '../images/team/luz.jpg';
+import tamaraImg from '../images/team/tamara.jpg';
 
 // Mapea las imágenes a los identificadores
 const imageMap = {
   'persona.jpg': personaImg,
   'sarai.jpg': saraiImg,
-
+  'alejandro.jpg': alejandroImg,
   'Cleydi.jpg': cleydiImg,
-
+  'jefferson.jpg': jeffersonImg,
   'eliz.jpg': elizImg,
   'camila.jpg': camilaImg,
 
   'ximena.jpg': ximenaImg,
+  'luz.jpg': luzImg,
+  'tamara.jpg': tamaraImg,
 };
 
 const SpecialistDetail = () => {
@@ -55,7 +59,11 @@ const SpecialistDetail = () => {
               <p className="specialist-description">{specialist.bio}</p>
               
               <h3>Experiencia</h3>
-              <p>{specialist.experience}</p>
+              <ul>
+                {specialist.experience.map((skill, index) => (
+                  <li key={index}>{skill}</li>
+                ))}
+              </ul>
               <h3>Habilidades</h3>
               <ul>
                 {specialist.skills.map((skill, index) => (

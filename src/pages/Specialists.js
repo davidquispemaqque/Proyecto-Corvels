@@ -8,13 +8,15 @@ import '../styles/specialists.css'; // Asegúrate de importar el CSS
 // Importa las imágenes
 import personaImg from '../images/team/persona.jpg';
 import saraiImg from '../images/team/sarai.jpg';
-
+import alejandroImg from '../images/team/alejandro.jpg';
 import cleydiImg from '../images/team/Cleydi.jpg';
-
+import jeffersonImg from '../images/team/jefferson.jpg';
 import elizImg from '../images/team/eliz.jpg';
 import camilaImg from '../images/team/camila.jpg';
 
 import ximenaImg from '../images/team/ximena.jpg';
+import luzImg from '../images/team/luz.jpg';
+import tamaraImg from '../images/team/tamara.jpg';
 
 import headerImage from '../images/grupo.jpg'; // Nueva imagen para el encabezado
 
@@ -23,13 +25,15 @@ const Specialists = () => {
   const imageMap = {
     'persona.jpg': personaImg,
     'sarai.jpg': saraiImg,
-
+    'alejandro.jpg': alejandroImg,
     'Cleydi.jpg': cleydiImg,
-
+    'jefferson.jpg': jeffersonImg,
     'eliz.jpg': elizImg,
     'camila.jpg': camilaImg,
 
     'ximena.jpg': ximenaImg,
+    'luz.jpg': luzImg,
+    'tamara.jpg': tamaraImg,
   };
 
   return (
