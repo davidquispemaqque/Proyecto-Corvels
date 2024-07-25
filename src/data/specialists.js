@@ -3,13 +3,13 @@ const specialists = [
   {
     "id": 1,
     "name": "David Quispe",
-    "role": "Diseñador y Desarrollador de páginas web",
+    "role": "Diseñador y Desarrollador de Páginas Web",
     "image": "persona.jpg",
-    "bio": "Mi nombre es Quispe Maqque David, especialista en diseño y desarrollo de paginas web con amplios conocimientos en tecnologías modernas como React, Node.js y Python. Tengo una fuerte capacidad para liderar proyectos y gestionar equipos, apoyado por mi formación en gestión de proyectos. Mi objetivo es crear soluciones innovadoras y eficientes que satisfagan las necesidades del cliente.",
+    "bio": "Mi nombre es Quispe Maqque David, especialista en diseño y desarrollo de páginas web con un profundo conocimiento en tecnologías modernas como React y Node.js. Me dedico a crear soluciones digitales innovadoras que no solo cumplan con las expectativas del cliente, sino que las superen. Mi enfoque se centra en la colaboración efectiva y la adaptación rápida a nuevos desafíos, lo que me permite contribuir de manera significativa a cada proyecto en el que participo.",
     "phone": "+51 987 654 321",
     "email": "david.quispe.m@tecsup.edu.pe",
-    "skills": ["JavaScript", "React", "Node.js", "Python", "Liderazgo", "Gestión de proyectos"],
-    "experience":[""]
+    "skills": ["JavaScript", "React", "Node.js", "Responsable", "Adaptabilidad", "Colaboración", "Gestión de proyectos"],
+    "experience":["Participación en una Hackathon de Innovación Social organizada por el BCP, donde contribuí al desarrollo de soluciones tecnológicas innovadoras.", "Creación de páginas web y sitios de comercio electrónico utilizando React, implementando diseños responsivos y funcionales para mejorar la experiencia del usuario.", "Desarrollo de una página web informativa, enfocada en proporcionar contenido claro y accesible a los visitantes.", ]
   },
   {
     "id": 2,
@@ -112,14 +112,14 @@ const specialists = [
   },
   {
     "id": 11,
-    "name": "Juan",
+    "name": "Eduardo Felipe Cornejo",
     "role": "Gestión y mantenimiento de maquinaria industrial",
     "image": "eduardo.jpg",
-    "bio": "Mi nombre es Eduardo Felipe Cornejo Gómez, especialista en gestión y mantenimiento de maquinarias industriales, con conocimiento en la elaboración de planes de mantenimiento efectivos para asegurar el óptimo funcionamiento de los equipos.",
+    "bio": "Mi nombre es Eduardo Felipe Cornejo Gómez, un especialista apasionado por la gestión y mantenimiento de maquinaria industrial. Mi enfoque se centra en desarrollar y ejecutar planes de mantenimiento innovadores que aseguran el funcionamiento de los equipos, optimizando así la producción y la eficiencia operativa",
     "phone": "+51 960 824 046",
     "email": "educg.7ut@gmail.com",
-    "skills": ["Revisión y anticipación de problemas potenciales, diseñando estrategias efectivas de mantenimiento.", "Mantenimiento de un espacio de trabajo ordenado para aumentar la eficiencia.", "Colaboración activa en equipos, valorando las ideas de mis compañeros.", "Gestión responsable del tiempo y actuación con integridad y transparencia en todas mis acciones."],
-    "experience": ["Gestión y mantenimiento de maquinarias textiles.", "Aplicación de conocimientos teóricos y prácticos para asegurar el funcionamiento óptimo de equipos clave."]
+    "skills": ["Trabajo en equipo", "Organización y gestión del tiempo", "Adaptabilidad", "Creatividad e innovación"],
+    "experience": ["En mi papel como especialista en mantenimiento de maquinaria en una empresa textil, me encargué de diseñar y ejecutar planes prácticos para garantizar el funcionamiento óptimo de las máquinas."]
   }
 ];
 

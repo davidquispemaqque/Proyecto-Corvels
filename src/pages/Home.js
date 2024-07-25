@@ -15,6 +15,11 @@ import logoPrescott from '../images/presto.png';
 import logoBodegaNajar from '../images/hombre.png';
 import logobode from '../images/najar.png';// Asegúrate de que la ruta es correcta
 
+import arturoGeneral from '../images/dueños/gerente.jpg';
+import arturoComercial from '../images/dueños/arturo.jpg';
+import joseTecnico from '../images/dueños/jose.jpg';
+import juanCarlosOperaciones from '../images/dueños/juan.jpg';
+
 
 function Home() {
   return (
@@ -67,60 +72,60 @@ function Home() {
         </section>
 
         <section className="my-5">
-      <Row className="align-items-center">
-        <Col style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <h2 className="services-title">Servicios profesionales que ofrecemos</h2>
-          <Link to="/services">
-            <Button variant="success" size="lg" className="ml-3 services-button">Ver más</Button>
-          </Link>
-        </Col>
-      </Row>
-      <Carousel interval={null}>
-        {services.map((service, index) => (
-          <Carousel.Item key={service.id}>
-            <Row>
-              <Col md={4}>
-                <Card className="mb-4 card-custom">
-                  <Card.Img variant="top" src={service.image} className="card-img-top" />
-                  <Card.Body className="card-body">
-                    <Card.Title className="card-title">{service.title}</Card.Title>
-                    <Link to={`/service/${service.id}`}>
-                      <Button variant="success" className="services-button services-button-align-right">Ver más</Button>
-                    </Link>
-                  </Card.Body>
-                </Card>
-              </Col>
-              {services[index + 1] && (
-                <Col md={4}>
-                  <Card className="mb-4 card-custom">
-                    <Card.Img variant="top" src={services[index + 1].image} className="card-img-top" />
-                    <Card.Body className="card-body">
-                      <Card.Title className="card-title">{services[index + 1].title}</Card.Title>
-                      <Link to={`/service/${services[index + 1].id}`}>
-                        <Button variant="success" className="services-button services-button-align-right">Ver más</Button>
-                      </Link>
-                    </Card.Body>
-                  </Card>
-                </Col>
-              )}
-              {services[index + 2] && (
-                <Col md={4}>
-                  <Card className="mb-4 card-custom">
-                    <Card.Img variant="top" src={services[index + 2].image} className="card-img-top" />
-                    <Card.Body className="card-body">
-                      <Card.Title className="card-title">{services[index + 2].title}</Card.Title>
-                      <Link to={`/service/${services[index + 2].id}`}>
-                        <Button variant="success" className="services-button services-button-align-right">Ver más</Button>
-                      </Link>
-                    </Card.Body>
-                  </Card>
-                </Col>
-              )}
-            </Row>
-          </Carousel.Item>
-        ))}
-      </Carousel>
-    </section>
+          <Row className="align-items-center">
+            <Col style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <h2 className="services-title">Servicios profesionales que ofrecemos</h2>
+              <Link to="/services">
+                <Button variant="success" size="lg" className="ml-3 services-button">Ver más</Button>
+              </Link>
+            </Col>
+          </Row>
+          <Carousel interval={null}>
+            {services.map((service, index) => (
+              <Carousel.Item key={service.id}>
+                <Row>
+                  <Col md={4}>
+                    <Card className="mb-4 card-custom">
+                      <Card.Img variant="top" src={service.image} className="card-img-top" />
+                      <Card.Body className="card-body">
+                        <Card.Title className="card-title">{service.title}</Card.Title>
+                        <Link to={`/service/${service.id}`}>
+                          <Button variant="success" className="services-button services-button-align-right">Ver más</Button>
+                        </Link>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                  {services[index + 1] && (
+                    <Col md={4}>
+                      <Card className="mb-4 card-custom">
+                        <Card.Img variant="top" src={services[index + 1].image} className="card-img-top" />
+                        <Card.Body className="card-body">
+                          <Card.Title className="card-title">{services[index + 1].title}</Card.Title>
+                          <Link to={`/service/${services[index + 1].id}`}>
+                            <Button variant="success" className="services-button services-button-align-right">Ver más</Button>
+                          </Link>
+                        </Card.Body>
+                      </Card>
+                    </Col>
+                  )}
+                  {services[index + 2] && (
+                    <Col md={4}>
+                      <Card className="mb-4 card-custom">
+                        <Card.Img variant="top" src={services[index + 2].image} className="card-img-top" />
+                        <Card.Body className="card-body">
+                          <Card.Title className="card-title">{services[index + 2].title}</Card.Title>
+                          <Link to={`/service/${services[index + 2].id}`}>
+                            <Button variant="success" className="services-button services-button-align-right">Ver más</Button>
+                          </Link>
+                        </Card.Body>
+                      </Card>
+                    </Col>
+                  )}
+                </Row>
+              </Carousel.Item>
+            ))}
+          </Carousel>
+        </section>
 
         <section className="my-5 why-choose-us">
           <Row>
@@ -150,33 +155,43 @@ function Home() {
               </Col>
             </Row>
             <Row>
-              <Col md={4}>
+              <Col md={3}>
                 <div className="team-card">
-                  <Image src="https://i.pinimg.com/564x/3e/b6/46/3eb646a40aed7887a36bc387b3bb9710.jpg" fluid className="team-image" />
-                  <h3 className="team-name">Ing. ....</h3>
+                  <Image src={arturoGeneral} fluid className="team-image" />
+                  <h3 className="team-name">Ing. Arturo Richard Velasco Cano</h3>
                   <h4 className="team-position">Gerente General</h4>
                   <p className="team-description">
-                    ¡Hola! ingeniero inscrito en el MINAM como responsable técnico. Cuento con más de 5 años de experiencia en manejo y gestión de residuos sólidos. Asesoro EORS que trabajan en industria y minería: Cerro Verde, Southern Perú, Las Bambas, Shougang Perú, Ares, etc.
+                    "Hola, soy Arturo, Gerente General con más de 25 años de experiencia, liderando la innovación y eficiencia en CORVEL'S S.R.L. Mi misión es ofrecer soluciones de saneamiento ambiental de alta calidad."
                   </p>
                 </div>
               </Col>
-              <Col md={4}>
+              <Col md={3}>
                 <div className="team-card">
-                  <Image src="https://i.pinimg.com/564x/81/ac/9e/81ac9ef6456e8eccbf651fc368e83e4a.jpg" fluid className="team-image" />
-                  <h3 className="team-name">Abg..... </h3>
-                  <h4 className="team-position">Abogada Ambiental</h4>
+                  <Image src={arturoComercial} fluid className="team-image" />
+                  <h3 className="team-name">Ing. Arturo Rafael Velasco Yáñez</h3>
+                  <h4 className="team-position">Gerente Comercial</h4>
                   <p className="team-description">
-                    Asesora legal en derecho ambiental, con maestría en Derecho Medioambiental, cuento con más de 6 años asesorando empresas consultoras ambientales, empresas titulares de proyectos de inversión extractivos y productivos, EORS, empresas remediadoras ambientales y empresas contratistas con el Estado.
+                    "Hola, soy Arturo Rafael, Gerente Comercial. Conecto nuestras soluciones con las necesidades de los clientes, promoviendo relaciones sólidas y servicios personalizados en CORVEL'S S.R.L."
                   </p>
                 </div>
               </Col>
-              <Col md={4}>
+              <Col md={3}>
                 <div className="team-card">
-                  <Image src="https://i.pinimg.com/564x/5a/92/2d/5a922d25842c134281e18ad7c794f660.jpg" fluid className="team-image" />
-                  <h3 className="team-name">Ing..... </h3>
-                  <h4 className="team-position">Especialista en SIG</h4>
+                  <Image src={joseTecnico} fluid className="team-image" />
+                  <h3 className="team-name">Ing. José Jesús Velasco Yáñez</h3>
+                  <h4 className="team-position">Director Técnico y Jefe SSOMAC</h4>
                   <p className="team-description">
-                    ¡Hola!, con Maestría en Medio Ambiente y Sistemas Integrados de Gestión. Especialista en actividades de Alto Riesgo según la Administración de Seguridad y Salud Ocupacional. Especialización en Seguridad y Prevención de Riesgos Industriales. 
+                    "Hola, soy José, Director Técnico y Jefe SSOMAC. Especialista en saneamiento ambiental con estudios en ingeniería, lidero proyectos innovadores y sostenibles en CORVEL'S S.R.L."
+                  </p>
+                </div>
+              </Col>
+              <Col md={3}>
+                <div className="team-card">
+                  <Image src={juanCarlosOperaciones} fluid className="team-image" />
+                  <h3 className="team-name">Ing. Juan Carlos Velasco Yáñez</h3>
+                  <h4 className="team-position">Jefe de Operaciones</h4>
+                  <p className="team-description">
+                    "Hola, soy Juan Carlos, Jefe de Operaciones. Aseguro servicios de fumigación y control de plagas seguros y eficaces, con un fuerte compromiso con la calidad y el medio ambiente."
                   </p>
                 </div>
               </Col>

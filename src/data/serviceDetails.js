@@ -79,7 +79,7 @@ const serviceDetails = [
   {
     id: 1,
     title: 'Desratización',
-    images: [desratizacionImg1, desratizacionImg2, desratizacionImg3, desratizacionImg4, desratizacionImg5],
+    images: [desratizacionImg1, desratizacionImg2, desratizacionImg3, desratizacionImg4, desratizacionImg5, desratizacionImg6, desratizacionImg7, desratizacionImg8, desratizacionImg9, desratizacionImg10, desratizacionImg11, desratizacionImg12, desratizacionImg13, desratizacionImg14],
     headerImage: desratizacionHeader, // Imagen específica para el encabezado
     description: 'La desratización es un proceso crucial para el control de roedores en diferentes entornos, asegurando un ambiente limpio y seguro.',
     points: [
@@ -109,7 +109,7 @@ const serviceDetails = [
   {
     id: 2,
     title: 'Desinfección',
-    images: [desinfeccionImg1, desinfeccionImg2, desinfeccionImg3, desinfeccionImg4],
+    images: [desinfeccionImg1, desinfeccionImg2, desinfeccionImg3, desinfeccionImg4, desinfeccionImg5, desinfeccionImg6, desinfeccionImg7, desinfeccionImg8, desinfeccionImg9],
     headerImage: desinfeccionHeader,
     description: 'La desinfección elimina los microorganismos patógenos presentes en superficies y ambientes, reduciendo el riesgo de infecciones.',
     points: [
@@ -163,7 +163,7 @@ const serviceDetails = [
   {
     id: 4,
     title: 'Trampas de Luz e Insectocutores',
-    images: [TrampasImg1, TrampasImg2, TrampasImg3, TrampasImg4],
+    images: [TrampasImg1, TrampasImg2, TrampasImg3, TrampasImg4, TrampasImg5, TrampasImg6, TrampasImg7, TrampasImg8],
     headerImage: TrampasHeader,
     description: 'El mantenimiento de trampas de luz e insectocutores es esencial para la captura y control de insectos voladores.',
     points: [
