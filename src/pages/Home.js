@@ -9,11 +9,14 @@ import logo from '../images/logo.png';
 import services from '../data/services'; // Importa los servicios desde el archivo services.js
 import gifImage from '../images/beneficios.gif';
 import VideoCarousel from '../components/VideoCarousel'; 
-import logoRecolsa from '../images/iberica.png';
-import logoAnotherCompany from '../images/recolsa.png';
-import logoPrescott from '../images/presto.png';
-import logoBodegaNajar from '../images/hombre.png';
-import logobode from '../images/najar.png';// Asegúrate de que la ruta es correcta
+
+
+import logoRecolsa from '../images/logos/iberica.png';
+import logoAnotherCompany from '../images/logos/recolsa.png';
+import logoPrescott from '../images/logos/presto.png';
+import logobode  from '../images/logos/hombre.jpg';
+import logoBodegaNajar from '../images/logos/najar.jpg';
+import logoservosa from '../images/logos/servosa.jpg';
 
 import arturoGeneral from '../images/dueños/gerente.jpg';
 import arturoComercial from '../images/dueños/arturo.jpg';
@@ -25,7 +28,7 @@ function Home() {
   return (
     <>
       <div className="full-width-carousel">
-      <Carousel id="carouselExampleAutoplaying" data-bs-ride="carousel" interval={1000}>
+      <Carousel id="carouselExampleAutoplaying" data-bs-ride="carousel" interval={2000}>
         <Carousel.Item>
           <img src={inicio1} className="d-block w-100" alt="Servicios de Saneamiento" />
           <div className="text-overlay">
@@ -212,11 +215,13 @@ function Home() {
               <Image src={logoPrescott} fluid />
             </Col>
             <Col xs={6} sm={4} md={2} className="mb-3">
-              <Image src={logoBodegaNajar} fluid />
-            </Col>
-
-            <Col xs={6} sm={4} md={2} className="mb-3">
               <Image src={logobode} fluid />
+            </Col>
+            <Col xs={6} sm={4} md={2} className="mb-3">
+            <Image src={logoBodegaNajar} fluid />
+            </Col>
+            <Col xs={6} sm={4} md={2} className="mb-3">
+            <Image src={logoservosa} fluid />
             </Col>
           </Row>
         </section>

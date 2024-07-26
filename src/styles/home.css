@@ -81,11 +81,11 @@ body, html {
 
 .text-overlay button {
   margin-top: 10rem; /* Espacio entre el texto y el botón */
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding: 10px 20px; /* Tamaño del botón */
   background-color: #28a745; /* Color del botón */
   border: none;
-  border-radius: 5px;
+  border-radius: 7px;
   transition: background-color 0.1s ease;
 }
 
