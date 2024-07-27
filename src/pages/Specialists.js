@@ -38,7 +38,12 @@ const Specialists = () => {
 
   return (
     <div>
-      <Header title="Nuestros Especialistas" image={headerImage} />
+      <div className="header-container">
+        <Header image={headerImage} />
+        <div className="specialists-title-container">
+          <h1 className="specialists-title">Nuestros Especialistas</h1>
+        </div>
+      </div>
 
       <Container className="specialists-container">
         <Row>

@@ -1,49 +1,58 @@
+// src/pages/ServiceDetail.js
 import React from 'react';
 import { Container, Row, Col, Button, Card, Carousel } from 'react-bootstrap';
 import { Link, useParams } from 'react-router-dom';
 import serviceDetails from '../data/serviceDetails';
+import services from '../data/services'; // Importa los servicios desde el archivo de datos
 import Header from '../components/Header';
 import { FaCheckCircle, FaChevronRight, FaAward, FaClipboardList } from 'react-icons/fa';
 import '../styles/serviceDetail.css';
 
 const ServiceDetail = () => {
   const { id } = useParams();
-  const service = serviceDetails.find(s => s.id === parseInt(id));
+  const serviceDetail = serviceDetails.find(s => s.id === parseInt(id));
+  const service = services.find(s => s.id === parseInt(id)); // Encuentra el servicio correspondiente para el título
 
-  if (!service) {
+  if (!serviceDetail || !service) {
     return <div>Servicio no encontrado</div>;
   }
 
   const whatsappNumber = "51953762677";
   const whatsappMessage = `Hola, estoy interesado en obtener más información sobre el servicio de ${service.title}. Corvel´s Servicios Generales.`;
+  
 
   return (
     <Container fluid className="service-detail-container">
-      <Header title={`Servicios de ${service.title}`} image={service.headerImage} /> {/* Usa la imagen de headerImage */}
+      <div className="header-container">
+        <Header image={serviceDetail.headerImage} />
+        <div className="service-title-container">
+          <h1 className="service-titles">Servicios de {service.title}</h1>
+        </div>
+      </div>
 
       <Container className="mt-5 service-content">
         <Row>
           <Col md={9}>
-            <h1 className="service-title">{service.title}</h1>
+            <h1 className="service-title">{serviceDetail.title}</h1>
             <p className="service-description">
-              Servicio de {service.title.toLowerCase()} y control de plagas, ¿Tiene problemas con roedores en su comunidad, local comercial, edificio o vivienda?
+              Servicio de {serviceDetail.title.toLowerCase()} y control de plagas, ¿Tiene problemas con roedores en su comunidad, local comercial, edificio o vivienda?
             </p>
-            <p>{service.description}</p>
+            <p>{serviceDetail.description}</p>
             <h4 className="section-title"><FaClipboardList className="section-icon" /> Puntos</h4>
-            {service.points && (
+            {serviceDetail.points && (
               <ul className="list-unstyled points-list">
-                {service.points.map((point, index) => (
+                {serviceDetail.points.map((point, index) => (
                   <li key={index} className="mb-2">
                     <FaCheckCircle className="text-success me-2" />{point}
                   </li>
                 ))}
               </ul>
             )}
-            {service.detailedProcedure && (
+            {serviceDetail.detailedProcedure && (
               <>
                 <h4 className="section-title"><FaChevronRight className="section-icon" /> Procedimiento Detallado</h4>
                 <ul className="list-unstyled detailed-procedure-list">
-                  {service.detailedProcedure.map((step, index) => (
+                  {serviceDetail.detailedProcedure.map((step, index) => (
                     <li key={index} className="mb-2">
                       <FaChevronRight className="text-primary me-2" />{step}
                     </li>
@@ -52,9 +61,9 @@ const ServiceDetail = () => {
               </>
             )}
             <h4 className="section-title"><FaAward className="section-icon" /> Beneficios</h4>
-            {service.benefits && (
+            {serviceDetail.benefits && (
               <ul className="list-unstyled benefits-list">
-                {service.benefits.map((benefit, index) => (
+                {serviceDetail.benefits.map((benefit, index) => (
                   <li key={index} className="mb-2">
                     <FaCheckCircle className="text-success me-2" />{benefit}
                   </li>
@@ -98,7 +107,7 @@ const ServiceDetail = () => {
           <h4 id="portfolio" className="section-title">Nuestro Portafolio</h4>
           <Col md={9} className="portfolio-image-container">
             <Carousel>
-              {service.images.map((image, index) => (
+              {serviceDetail.images.map((image, index) => (
                 <Carousel.Item key={index} className="carousel-service">
                   <img src={image} alt={`Slide ${index}`} className="d-block w-100" />
                 </Carousel.Item>

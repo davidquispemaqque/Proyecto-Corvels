@@ -10,7 +10,12 @@ import blogPostsData from '../data/blogPostsData'; // Importa los datos del blog
 const Blog = () => {
   return (
     <div>
-      <Header title="Nuestro Blog" image={headerImage} />
+      <div className="header-container">
+        <Header image={headerImage} />
+        <div className="blog-title-container">
+          <h1 className="blog-title">Nuestro Blog</h1>
+        </div>
+      </div>
       
       <Container className="blog-container">
         <Row>

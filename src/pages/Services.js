@@ -1,3 +1,4 @@
+// src/pages/Services.js
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -12,7 +13,12 @@ const Services = () => {
 
   return (
     <div className="services-background">
-      <Header title="Nuestros Servicios" image={headerImage} />
+      <div className="header-container">
+        <Header image={headerImage} />
+        <div className="services-title-container">
+          <h1 className="services-titles">Nuestros Servicios</h1>
+        </div>
+      </div>
 
       <Container className="mt-5">
         <Row className="g-4">

@@ -9,6 +9,9 @@ const WhatsAppButton = () => {
     setOpen(!open);
   };
 
+  // Mensaje predeterminado para el chat
+  const defaultMessage = "Hola, estoy interesado en obtener más información sobre sus servicios.";
+
   return (
     <div>
       <div className={`whatsapp-chat ${open ? 'open' : ''}`}>
@@ -20,7 +23,7 @@ const WhatsAppButton = () => {
           <p>Hola 👋<br />¿En qué podemos ayudarte?</p>
         </div>
         <div className="whatsapp-footer">
-          <a href="https://wa.me/51953762677" target="_blank" rel="noopener noreferrer">
+          <a href={`https://wa.me/51953762677?text=${encodeURIComponent(defaultMessage)}`} target="_blank" rel="noopener noreferrer">
             <button className="whatsapp-button">Chatea con nosotros</button>
           </a>
         </div>

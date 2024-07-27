@@ -56,3 +56,53 @@
 .highlight {
   color: #007bff;
 }
+
+
+/* Contenedor del título y la imagen para asegurar que el título está sobre la imagen */
+.header-container {
+  position: relative;
+}
+
+/* Estilo para el contenedor del título "Contactos" */
+.contact-title-container {
+  position: absolute;
+  top: 65%; /* Ajusta la posición vertical según sea necesario */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center; /* Centra el texto horizontalmente */
+}
+
+/* Estilo para el título "Contactos" */
+.contact-title {
+  background-color: rgba(95, 7, 7, 0.5);
+  padding: 82px; /* Ajusta el padding según tu preferencia */
+  font-size: 4.5rem; /* Ajusta el tamaño de la fuente según tus necesidades */
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 2rem; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
+    padding: 40px 20px; /* Ajusta el padding para que se vea bien en dispositivos móviles */
+  }
+
+  .contact-title-container {
+    top: 50%; /* Ajusta la posición vertical para móviles */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-title {
+    font-size: 2.5rem; /* Ajusta aún más el tamaño de la fuente para pantallas muy pequeñas */
+    padding: 99px 46px; /* Ajusta el padding para dispositivos muy pequeños */
+  }
+
+  .contact-title-container {
+    top: 66%; /* Ajusta la posición vertical para dispositivos muy pequeños */
+  }
+}
+

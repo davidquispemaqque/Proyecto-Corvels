@@ -98,3 +98,50 @@ h2 {
   color: #28a745;
 }
 
+
+/* Contenedor de la imagen para asegurar que es el punto de referencia */
+.header-container {
+  position: absolute;
+}
+
+/* Estilo para el título "Sobre Nosotros" */
+.about-title-container {
+  position: absolute;
+  top: 65%; /* Ajusta la posición vertical según sea necesario */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* Asegura que el contenedor abarque toda la imagen */
+  text-align: center; /* Centra el texto horizontalmente */
+}
+
+.about-title {
+  background-color: rgba(95, 7, 7, 0.5);
+  padding: 82px; /* Ajusta el padding según tu preferencia */
+  font-size: 4.5rem; /* Ajusta el tamaño de la fuente según tus necesidades */
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2rem; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
+    padding: 40px 20px; /* Ajusta el padding para que se vea bien en dispositivos móviles */
+  }
+
+  .about-title-container {
+    top: 50%; /* Ajusta la posición vertical para móviles */
+  }
+}
+
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 2.5rem; /* Ajusta aún más el tamaño de la fuente para pantallas muy pequeñas */
+    padding: 99px 46px; /* Ajusta el padding para dispositivos muy pequeños */
+  }
+
+  .about-title-container {
+    top: 66%; /* Ajusta la posición vertical para dispositivos muy pequeños */
+  }
+}

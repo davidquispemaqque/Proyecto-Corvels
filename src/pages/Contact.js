@@ -8,9 +8,17 @@ import '../styles/contact.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Contact = () => {
+  // Mensaje predeterminado para el chat de WhatsApp
+  const defaultMessage = "Hola, estoy interesado en obtener más información sobre sus servicios.";
+
   return (
     <Container fluid>
-      <Header title="Contactos" image={contactImage} />
+      <div className="header-container">
+        <Header image={contactImage} />
+        <div className="contact-title-container">
+          <h1 className="contact-title">Contactos</h1>
+        </div>
+      </div>
       <Container>
         <section className="contact-details my-5">
           <Row>
@@ -42,7 +50,7 @@ const Contact = () => {
                   </a>
                 </div>
                 <div className="contact-method">
-                  <a href="https://wa.me/51953762677" target="_blank" rel="noopener noreferrer">
+                  <a href={`https://wa.me/51953762677?text=${encodeURIComponent(defaultMessage)}`} target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-whatsapp"></i>
                     <div>
                       <h5>WhatsApp</h5>

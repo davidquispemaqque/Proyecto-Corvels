@@ -12,16 +12,3 @@
   align-items: center;
   justify-content: center;
 }
-
-.header-title {
-  position: absolute;
-  top: 65%; /* Ajusta la posición vertical */
-  left: 50%; /* Ajusta la posición horizontal */
-  transform: translate(-50%, -50%); /* Centra el texto */
-  background-color: rgba(95, 7, 7, 0.5); /* Fondo opaco */
-  padding: 80px 800px; /* Espaciado interno */
-  font-size: 4.5rem; /* Ajusta el tamaño de la fuente según tus necesidades */
-  color: white; /* Color del texto */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Añade una sombra al texto */
-  white-space: nowrap; /* Evita el salto de línea */
-}

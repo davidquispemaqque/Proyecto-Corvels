@@ -36,7 +36,12 @@ const About = () => {
 
   return (
     <Container fluid className="about-container">
-      <Header title="Sobre Nosotros" image={sobreNosotrosImg} />
+      <div className="header-container">
+        <Header image={sobreNosotrosImg} />
+        <div className="about-title-container">
+          <h1 className="about-title">Sobre Nosotros</h1>
+        </div>
+      </div>
       <Container>
         <section className="my-5 quienes-somos-section">
           <Row>

@@ -13,7 +13,6 @@ const Header = ({ title, image }) => {
         backgroundImage: `url(${backgroundImage})`,
       }}
     >
-      <h1 className="header-title">{title}</h1>
     </section>
   );
 };
