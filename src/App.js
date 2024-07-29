@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import CustomNavbar from './components/CustomNavbar';
 import Footer from './components/Footer';
 
@@ -11,24 +11,55 @@ import Blog from './pages/Blog';
 import Specialists from './pages/Specialists';
 import ServiceDetail from './pages/ServiceDetail';
 import SpecialistDetail from './pages/SpecialistDetail';
-import WhatsAppButton from './components/WhatsAppButton'; // Importa el nuevo componente
-import './App.css'; // Asegúrate de que el archivo CSS global esté importado
+import WhatsAppButton from './components/WhatsAppButton';
+import './App.css';
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo(0, 0);
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    };
+
+    scrollToTop();
+    
+    const timeoutId = setTimeout(scrollToTop, 100);
+
+    return () => clearTimeout(timeoutId);
+  }, [pathname]);
+  
+  return null;
+}
+
+function ScrollWrapper({ children }) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }, []);
+
+  return <>{children}</>;
+}
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div>
         <CustomNavbar />
-        <WhatsAppButton /> {/* Añade el botón de WhatsApp aquí */}
+        <WhatsAppButton />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/service/:id" element={<ServiceDetail />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/specialists" element={<Specialists />} />
-          <Route path="/specialist/:id" element={<SpecialistDetail />} />
+          <Route path="/" element={<ScrollWrapper><Home /></ScrollWrapper>} />
+          <Route path="/about" element={<ScrollWrapper><About /></ScrollWrapper>} />
+          <Route path="/services" element={<ScrollWrapper><Services /></ScrollWrapper>} />
+          <Route path="/service/:id" element={<ScrollWrapper><ServiceDetail /></ScrollWrapper>} />
+          <Route path="/contact" element={<ScrollWrapper><Contact /></ScrollWrapper>} />
+          <Route path="/blog" element={<ScrollWrapper><Blog /></ScrollWrapper>} />
+          <Route path="/specialists" element={<ScrollWrapper><Specialists /></ScrollWrapper>} />
+          <Route path="/specialist/:id" element={<ScrollWrapper><SpecialistDetail /></ScrollWrapper>} />
         </Routes>
         <Footer />
       </div>

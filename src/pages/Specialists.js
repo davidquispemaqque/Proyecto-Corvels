@@ -6,7 +6,7 @@ import Header from '../components/Header'; // Importa el componente Header
 import '../styles/specialists.css'; // Asegúrate de importar el CSS
 
 // Importa las imágenes
-import personaImg from '../images/team/persona.jpg';
+import davidImg from '../images/team/david.jpg';
 import saraiImg from '../images/team/sarai.jpg';
 import alejandroImg from '../images/team/alejandro.jpg';
 import cleydiImg from '../images/team/Cleydi.jpg';
@@ -23,7 +23,7 @@ import headerImage from '../images/grupo.jpg'; // Nueva imagen para el encabezad
 const Specialists = () => {
   // Mapea las imágenes a los identificadores
   const imageMap = {
-    'persona.jpg': personaImg,
+    'david.jpg': davidImg,
     'sarai.jpg': saraiImg,
     'alejandro.jpg': alejandroImg,
     'Cleydi.jpg': cleydiImg,

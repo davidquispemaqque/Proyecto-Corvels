@@ -7,7 +7,7 @@ import specialists from '../data/specialists';
 import '../styles/specialistDetail.css';
 
 // Importa las imágenes
-import personaImg from '../images/team/persona.jpg';
+import davidImg from '../images/team/david.jpg';
 import saraiImg from '../images/team/sarai.jpg';
 import camilaImg from '../images/team/camila.jpg';
 import cleydiImg from '../images/team/Cleydi.jpg';
@@ -21,7 +21,7 @@ import eduardoImg from '../images/team/eduardo.jpg';
 
 // Mapea las imágenes a los identificadores
 const imageMap = {
-  'persona.jpg': personaImg,
+  'david.jpg': davidImg,
   'sarai.jpg': saraiImg,
   'alejandro.jpg': alejandroImg,
   'Cleydi.jpg': cleydiImg,

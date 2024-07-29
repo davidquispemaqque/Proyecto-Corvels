@@ -56,6 +56,8 @@ import TanquesImg3 from '../images/Tanques3.jpg';
 import TanquesImg4 from '../images/Tanques4.jpg';
 import TanquesImg5 from '../images/Tanques5.jpg';
 import TanquesImg6 from '../images/Tanques6.jpg';
+import TanquesImg7 from '../images/tanques7.jpg';
+import TanquesImg8 from '../images/Tanques8.jpg';
 
 // Control Aviar
 import aviarHeader from '../images/palomas.jpg';
@@ -193,7 +195,7 @@ const serviceDetails = [
   {
     id: 5,
     title: 'Limpieza de Tanques de Agua / Cisternas',
-    images: [TanquesImg1, TanquesImg2, TanquesImg3, TanquesImg4, TanquesImg5, TanquesImg6],
+    images: [TanquesImg1, TanquesImg2, TanquesImg3, TanquesImg4, TanquesImg5, TanquesImg6, TanquesImg7, TanquesImg8],
     headerImage: TanquesHeader,
     description: 'La limpieza de tanques de agua y cisternas es vital para asegurar la calidad del agua almacenada.',
     points: [

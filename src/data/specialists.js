@@ -4,11 +4,11 @@ const specialists = [
     "id": 1,
     "name": "David Quispe",
     "role": "Diseñador y Desarrollador de Páginas Web",
-    "image": "persona.jpg",
-    "bio": "Mi nombre es Quispe Maqque David, especialista en diseño y desarrollo de páginas web con un profundo conocimiento en tecnologías modernas como React y Node.js. Me dedico a crear soluciones digitales innovadoras que no solo cumplan con las expectativas del cliente, sino que las superen. Mi enfoque se centra en la colaboración efectiva y la adaptación rápida a nuevos desafíos, lo que me permite contribuir de manera significativa a cada proyecto en el que participo.",
-    "phone": "+51 987 654 321",
-    "email": "david.quispe.m@tecsup.edu.pe",
-    "skills": ["JavaScript", "React", "Node.js", "Responsable", "Adaptabilidad", "Colaboración", "Gestión de proyectos"],
+    "image": "david.jpg",
+    "bio": "Mi nombre es David Quispe Maqque, especialista en diseño y desarrollo de páginas web con conocimiento en tecnologías modernas como React y Django. Me enfoco en crear soluciones digitales innovadoras que no solo cumplen, sino que superan las expectativas de los clientes. Mi enfoque está centrado en la colaboración efectiva y la rápida adaptación a nuevos desafíos, lo que me permite contribuir de manera significativa a cada proyecto en el que participo.",
+    "phone": "+51 922 754 754",
+    "email": "bardock8523@gmail.com",
+    "skills": ["JavaScript", "React", "Django", "Responsable", "Adaptabilidad", "Colaboración", "Gestión de proyectos"],
     "experience":["Participación en una Hackathon de Innovación Social organizada por el BCP, donde contribuí al desarrollo de soluciones tecnológicas innovadoras.", "Creación de páginas web y sitios de comercio electrónico utilizando React, implementando diseños responsivos y funcionales para mejorar la experiencia del usuario.", "Desarrollo de una página web informativa, enfocada en proporcionar contenido claro y accesible a los visitantes.", ]
   },
   {

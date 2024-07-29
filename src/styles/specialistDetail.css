@@ -65,7 +65,7 @@
 .specialist-image {
   position: absolute;
   top: 30px;
-  left: 35px;
+  left: 33px;
   width: 90%;
   height: 90%;
   object-fit: cover;
@@ -122,4 +122,66 @@ h3 {
   background: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   z-index: -1;
+}
+
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .specialist-detail {
+    margin-top: 150px;
+  }
+
+  .specialist-role {
+    font-size: 2rem;
+  }
+
+  .specialist-description {
+    margin: 20px 0;
+  }
+
+  .specialist-image {
+    top: 20px;
+    left: 25px;
+    width: 85%;
+    height: 85%;
+  }
+
+  .contact-icon-email,
+  .contact-icon-phone {
+    font-size: 1.5rem; /* Tamaño del ícono reducido */
+  }
+
+  .contact-item p {
+    font-size: 1rem; /* Ajuste del tamaño del texto */
+  }
+}
+
+@media (max-width: 480px) {
+  .specialist-detail {
+    margin-top: 200px;
+  }
+
+  .specialist-role {
+    font-size: 1.5rem;
+  }
+
+  .specialist-description {
+    margin: 15px 0;
+  }
+
+  .specialist-image {
+    top: 19px;
+    left: 19px;
+    width: 90%;
+    height: 90%;
+  }
+
+  .contact-icon-email,
+  .contact-icon-phone {
+    font-size: 1.2rem; /* Tamaño del ícono reducido */
+  }
+
+  .contact-item p {
+    font-size: 0.9rem; /* Ajuste del tamaño del texto */
+  }
 }
