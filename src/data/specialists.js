@@ -41,7 +41,7 @@ const specialists = [
     "bio": "Mi nombre es Cleydi Nataly Mamani Condori, especialista en gestión de seguridad y salud en el trabajo en la empresa Corvels.\nTengo una sólida capacidad para implementar sistemas de gestión de SST y liderar iniciativas de prevención de riesgos.\nMi objetivo es desarrollar soluciones innovadoras y eficientes que mejoren continuamente la cultura de seguridad y cumplan con las normativas vigentes.",
     "phone": "+51 944 739 201",
     "email": "cleydinatalymamanicondori@gmail.com",
-    "skills": ["Solución de problemas", "Comunicación efectiva", "Adaptabilidad"],
+    "skills": ["AutoCAD", "Excel", "Solución de problemas", "Comunicación efectiva", "Adaptabilidad"],
     "experience": ["Documentos IPERC", "Diagnóstico de las 5S", "Monitoreo Ocupacional."]
   },
   {
